@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-20 13:01:32+\n"
+"POT-Creation-Date: 2021-04-21 12:45:41+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -96,6 +96,12 @@ msgid "Clear translation cache"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.planta.Planta#cliente
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#create(java.lang.String,java.lang.String,java.lang.String)
+msgid "Cliente"
+msgstr ""
+
+
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract$ChangeType#COMMAND
 msgid "Command"
 msgstr ""
@@ -117,6 +123,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObjects#create()
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#create()
 msgid "Create"
 msgstr ""
 
@@ -147,6 +154,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadJdoMetadata()
+#: domainapp.modules.simple.dom.planta.Planta#downloadJdoMetadata()
 msgid "Download Jdo Metadata"
 msgstr ""
 
@@ -154,6 +162,7 @@ msgstr ""
 #: domainapp.application.fixture.scenarios.DomainAppDemo#downloadLayoutXml()
 #: domainapp.application.services.homepage.HomePageViewModel#downloadLayoutXml()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadLayoutXml()
+#: domainapp.modules.simple.dom.planta.Planta#downloadLayoutXml()
 #: org.apache.isis.applib.AbstractViewModel#downloadLayoutXml()
 #: org.apache.isis.applib.ViewModel#downloadLayoutXml()
 #: org.apache.isis.applib.domain.DomainObjectList#downloadLayoutXml()
@@ -221,6 +230,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObjects#findByName()
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#findByName()
 msgid "Find By Name"
 msgstr ""
 
@@ -241,6 +251,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusIdLong()
+#: domainapp.modules.simple.dom.planta.Planta#datanucleusIdLong()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusIdLong#prop()
 msgid "Id"
 msgstr ""
@@ -272,6 +283,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObjects#listAll()
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()
 msgid "List All"
 msgstr ""
 
@@ -298,6 +310,13 @@ msgstr ""
 #: domainapp.modules.simple.dom.impl.SimpleObjects#create(java.lang.String)
 #: domainapp.modules.simple.dom.impl.SimpleObjects#findByName(java.lang.String)
 msgid "Name"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.planta.Planta#nombre
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#create(java.lang.String,java.lang.String,java.lang.String)
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#findByName(java.lang.String)
+msgid "Nombre"
 msgstr ""
 
 
@@ -330,6 +349,7 @@ msgstr ""
 #: domainapp.application.fixture.scenarios.DomainAppDemo#openRestApi()
 #: domainapp.application.services.homepage.HomePageViewModel#openRestApi()
 #: domainapp.modules.simple.dom.impl.SimpleObject#openRestApi()
+#: domainapp.modules.simple.dom.planta.Planta#openRestApi()
 #: org.apache.isis.applib.AbstractViewModel#openRestApi()
 #: org.apache.isis.applib.ViewModel#openRestApi()
 #: org.apache.isis.applib.domain.DomainObjectList#openRestApi()
@@ -357,6 +377,11 @@ msgstr ""
 #: org.apache.isis.applib.services.fixturespec.FixtureScriptsDefault#runFixtureScript(org.apache.isis.applib.fixturescripts.FixtureScript,java.lang.String)
 #: org.apache.isis.applib.services.fixturespec.FixtureScriptsDefault#runFixtureScriptWithAutoComplete(org.apache.isis.applib.fixturescripts.FixtureScript,java.lang.String)
 msgid "Parameters"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio
+msgid "Plantas"
 msgstr ""
 
 
@@ -400,6 +425,12 @@ msgid "Prototyping"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.planta.Planta#provincia
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#create(java.lang.String,java.lang.String,java.lang.String)
+msgid "Provincia"
+msgstr ""
+
+
 #: org.apache.isis.applib.services.swagger.SwaggerService$Visibility#PUBLIC
 msgid "Public"
 msgstr ""
@@ -418,6 +449,7 @@ msgstr ""
 #: domainapp.application.fixture.scenarios.DomainAppDemo#rebuildMetamodel()
 #: domainapp.application.services.homepage.HomePageViewModel#rebuildMetamodel()
 #: domainapp.modules.simple.dom.impl.SimpleObject#rebuildMetamodel()
+#: domainapp.modules.simple.dom.planta.Planta#rebuildMetamodel()
 #: org.apache.isis.applib.AbstractViewModel#rebuildMetamodel()
 #: org.apache.isis.applib.ViewModel#rebuildMetamodel()
 #: org.apache.isis.applib.domain.DomainObjectList#rebuildMetamodel()
@@ -529,6 +561,8 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionTimestamp()
+#: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionLong()
+#: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionTimestamp()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionLong#prop()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionTimestamp#prop()
 msgid "Version"
