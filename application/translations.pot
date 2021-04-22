@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-21 12:45:41+\n"
+"POT-Creation-Date: 2021-04-22 13:41:46+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -81,6 +81,16 @@ msgid "Audit Entry"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#findByName()
+msgid "Buscar equipo: "
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#findByName()
+msgid "Buscar planta: "
+msgstr ""
+
+
 #: org.apache.isis.core.runtime.system.session.IsisSessionFactoryBuilder
 msgid "Cancel"
 msgstr ""
@@ -122,8 +132,17 @@ msgid "Confirm"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.impl.SimpleObjects#create()
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create()
+msgid "Crear equipo"
+msgstr ""
+
+
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#create()
+msgid "Crear planta: "
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.impl.SimpleObjects#create()
 msgid "Create"
 msgstr ""
 
@@ -143,6 +162,13 @@ msgid "Delete"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#denominacion
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#findByName(java.lang.String)
+msgid "Denominacion"
+msgstr ""
+
+
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract
 msgid "Detail"
 msgstr ""
@@ -153,6 +179,7 @@ msgid "Domain Change"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.planta.Planta#downloadJdoMetadata()
 msgid "Download Jdo Metadata"
@@ -161,6 +188,7 @@ msgstr ""
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo#downloadLayoutXml()
 #: domainapp.application.services.homepage.HomePageViewModel#downloadLayoutXml()
+#: domainapp.modules.simple.dom.equipo.Equipo#downloadLayoutXml()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadLayoutXml()
 #: domainapp.modules.simple.dom.planta.Planta#downloadLayoutXml()
 #: org.apache.isis.applib.AbstractViewModel#downloadLayoutXml()
@@ -210,6 +238,11 @@ msgid "Element Object Type"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio
+msgid "Equipos"
+msgstr ""
+
+
 #: org.apache.isis.applib.services.menu.MenuBarsService$Type#FALLBACK
 msgid "Fallback"
 msgstr ""
@@ -230,7 +263,6 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObjects#findByName()
-#: domainapp.modules.simple.dom.planta.PlantaRepositorio#findByName()
 msgid "Find By Name"
 msgstr ""
 
@@ -250,6 +282,13 @@ msgid "Home Page"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#horometro
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int)
+msgid "Horometro"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#datanucleusIdLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusIdLong()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusIdLong()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusIdLong#prop()
@@ -283,8 +322,17 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObjects#listAll()
-#: domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()
 msgid "List All"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#listAll()
+msgid "Listar equipos: "
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()
+msgid "Listar plantas: "
 msgstr ""
 
 
@@ -302,6 +350,12 @@ msgstr ""
 
 #: org.apache.isis.applib.services.layout.LayoutService$Style#MINIMAL
 msgid "Minimal"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#modelo
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int)
+msgid "Modelo"
 msgstr ""
 
 
@@ -348,6 +402,7 @@ msgstr ""
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo#openRestApi()
 #: domainapp.application.services.homepage.HomePageViewModel#openRestApi()
+#: domainapp.modules.simple.dom.equipo.Equipo#openRestApi()
 #: domainapp.modules.simple.dom.impl.SimpleObject#openRestApi()
 #: domainapp.modules.simple.dom.planta.Planta#openRestApi()
 #: org.apache.isis.applib.AbstractViewModel#openRestApi()
@@ -448,6 +503,7 @@ msgstr ""
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo#rebuildMetamodel()
 #: domainapp.application.services.homepage.HomePageViewModel#rebuildMetamodel()
+#: domainapp.modules.simple.dom.equipo.Equipo#rebuildMetamodel()
 #: domainapp.modules.simple.dom.impl.SimpleObject#rebuildMetamodel()
 #: domainapp.modules.simple.dom.planta.Planta#rebuildMetamodel()
 #: org.apache.isis.applib.AbstractViewModel#rebuildMetamodel()
@@ -559,6 +615,8 @@ msgid "Value"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#datanucleusVersionLong()
+#: domainapp.modules.simple.dom.equipo.Equipo#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionLong()

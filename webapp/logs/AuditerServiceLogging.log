@@ -1,6 +1,4 @@
-2021-04-21 12:47:37.474 b913ef2a-1b65-48fc-9029-fa3508d89d68,0: simple.Planta:1 by sven, cliente: [NEW] -> w
-2021-04-21 12:47:37.474 b913ef2a-1b65-48fc-9029-fa3508d89d68,0: simple.Planta:1 by sven, nombre: [NEW] -> x
-2021-04-21 12:47:37.475 b913ef2a-1b65-48fc-9029-fa3508d89d68,0: simple.Planta:1 by sven, provincia: [NEW] -> q
-2021-04-21 12:47:46.227 f4feba82-3f2a-4b71-bbe0-2c6414c46c1b,0: simple.Planta:2 by sven, nombre: [NEW] -> a1
-2021-04-21 12:47:46.227 f4feba82-3f2a-4b71-bbe0-2c6414c46c1b,0: simple.Planta:2 by sven, provincia: [NEW] -> a2
-2021-04-21 12:47:46.227 f4feba82-3f2a-4b71-bbe0-2c6414c46c1b,0: simple.Planta:2 by sven, cliente: [NEW] -> a3
+2021-04-22 13:53:30.657 2d0834a7-7e1c-4088-9d70-13f916e6769c,0: simple.Equipo:2 by sven, denominacion: [NEW] -> w
+2021-04-22 13:53:30.658 2d0834a7-7e1c-4088-9d70-13f916e6769c,0: simple.Equipo:2 by sven, modelo: [NEW] -> w
+2021-04-22 13:53:30.658 2d0834a7-7e1c-4088-9d70-13f916e6769c,0: simple.Equipo:2 by sven, horometro: [NEW] -> 3
+2021-04-22 13:53:46.113 dbcb3e74-4fee-4dcd-ab2b-14ec10d74559,0: simple.Equipo:2 by sven, horometro: 3 -> 4

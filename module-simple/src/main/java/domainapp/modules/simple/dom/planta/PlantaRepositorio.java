@@ -39,7 +39,7 @@ import java.util.List;
 public class PlantaRepositorio {
 
     @Action(semantics = SemanticsOf.SAFE)
-    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT, named = "Listar plantas: ")
     @MemberOrder(sequence = "1")
     public List<Planta> listAll() {
         return repositoryService.allInstances(Planta.class);
@@ -47,7 +47,7 @@ public class PlantaRepositorio {
 
 
     @Action(semantics = SemanticsOf.SAFE)
-    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT, named = "Buscar planta: ")
     @MemberOrder(sequence = "2")
     public List<Planta> findByName(
             @ParameterLayout(named="Nombre")
@@ -84,6 +84,7 @@ public class PlantaRepositorio {
 
     public static class CreateDomainEvent extends ActionDomainEvent<PlantaRepositorio> {}
     @Action(domainEvent = CreateDomainEvent.class)
+    @ActionLayout(named = "Crear planta: ")
     @MemberOrder(sequence = "3")
     public Planta create(
             final @ParameterLayout(named="Nombre") String nombre,
