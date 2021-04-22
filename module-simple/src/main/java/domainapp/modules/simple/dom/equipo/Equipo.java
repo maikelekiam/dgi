@@ -24,6 +24,7 @@ import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.message.MessageService;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
+import org.joda.time.LocalDate;
 
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.IdentityType;
@@ -57,6 +58,36 @@ public class Equipo implements Comparable<Equipo> {
     @lombok.NonNull
     @MemberOrder(sequence = "3")
     private int horometro;
+
+    @Column(allowsNull = "false")
+    @lombok.NonNull
+    @Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "4")
+    private int horasProximoMantenimiento;
+
+    @Column(allowsNull = "false")
+    @lombok.NonNull
+    @Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "5")
+    private LocalDate fechaUltimoMantenimiento;
+
+    @Column(allowsNull = "false")
+    @lombok.NonNull
+    @Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "6")
+    private int porcentajeDisponibilidadMensual;
+
+    @Column(allowsNull = "false")
+    @lombok.NonNull
+    @Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "7")
+    private int rpm;
+
+    @Column(allowsNull = "false")
+    @lombok.NonNull
+    @Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "8")
+    private int presionAceite;
 
     @Override
     public String toString() {

@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-22 13:41:46+\n"
+"POT-Creation-Date: 2021-04-22 14:07:50+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,7 +163,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#denominacion
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#findByName(java.lang.String)
 msgid "Denominacion"
 msgstr ""
@@ -248,6 +248,11 @@ msgid "Fallback"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#fechaUltimoMantenimiento
+msgid "Fecha Ultimo Mantenimiento"
+msgstr ""
+
+
 #: org.apache.isis.applib.services.dto.Dto_downloadXml#act(java.lang.String)
 #: org.apache.isis.applib.services.dto.Dto_downloadXsd#act(java.lang.String,org.apache.isis.applib.services.jaxb.JaxbService$IsisSchemas)
 #: org.apache.isis.applib.services.layout.LayoutServiceMenu#downloadMenuBarsLayout(java.lang.String,org.apache.isis.applib.services.menu.MenuBarsService$Type)
@@ -282,8 +287,18 @@ msgid "Home Page"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+msgid "Horas"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#horasProximoMantenimiento
+msgid "Horas Proximo Mantenimiento"
+msgstr ""
+
+
 #: domainapp.modules.simple.dom.equipo.Equipo#horometro
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
 msgid "Horometro"
 msgstr ""
 
@@ -354,7 +369,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#modelo
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
 msgid "Modelo"
 msgstr ""
 
@@ -440,6 +455,16 @@ msgid "Plantas"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+msgid "Porcentaje"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#porcentajeDisponibilidadMensual
+msgid "Porcentaje Disponibilidad Mensual"
+msgstr ""
+
+
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract#postValue
 msgid "Post Value"
 msgstr ""
@@ -447,6 +472,16 @@ msgstr ""
 
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract#preValue
 msgid "Pre Value"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+msgid "Presion"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#presionAceite
+msgid "Presion Aceite"
 msgstr ""
 
 
@@ -538,6 +573,11 @@ msgid "Result key"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#rpm
+msgid "Rpm"
+msgstr ""
+
+
 #: org.apache.isis.applib.fixturescripts.FixtureScripts#runFixtureScript()
 #: org.apache.isis.applib.services.fixturespec.FixtureScriptsDefault#runFixtureScript()
 #: org.apache.isis.applib.services.fixturespec.FixtureScriptsDefault#runFixtureScriptWithAutoComplete()
@@ -600,6 +640,11 @@ msgid "Type"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+msgid "Ultimo"
+msgstr ""
+
+
 #: domainapp.modules.simple.dom.impl.SimpleObject#updateName()
 msgid "Update Name"
 msgstr ""
@@ -637,6 +682,11 @@ msgstr ""
 #: org.apache.isis.applib.services.layout.Object_rebuildMetamodel
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_downloadJdoMetadata
 msgid "datanucleusIdLong"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+msgid "rpm"
 msgstr ""
 
 

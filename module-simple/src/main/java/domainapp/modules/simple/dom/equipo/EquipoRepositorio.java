@@ -25,6 +25,7 @@ import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.core.metamodel.facets.object.promptStyle.PromptStyleConfiguration;
 import org.datanucleus.query.typesafe.TypesafeQuery;
+import org.joda.time.LocalDate;
 
 
 import java.awt.*;
@@ -92,9 +93,14 @@ public class EquipoRepositorio {
     public Equipo create(
             final @ParameterLayout(named="Denominacion") String denominacion,
             final @ParameterLayout(named="Modelo") String modelo,
-            final @ParameterLayout(named="Horometro") int horometro
+            final @ParameterLayout(named="Horometro") int horometro,
+            final @ParameterLayout(named="Horas") int horasProximoMantenimiento,
+            final @ParameterLayout(named="Ultimo") LocalDate fechaUltimoMantenimiento,
+            final @ParameterLayout(named="Porcentaje") int porcentajeDisponibilidadMensual,
+            final @ParameterLayout(named="rpm") int rpm,
+            final @ParameterLayout(named="Presion") int presionAceite
     ) {
-        return repositoryService.persist(new Equipo(denominacion, modelo, horometro));
+        return repositoryService.persist(new Equipo(denominacion,modelo,horometro,horasProximoMantenimiento,fechaUltimoMantenimiento,porcentajeDisponibilidadMensual,rpm,presionAceite));
     }
 
     @javax.inject.Inject

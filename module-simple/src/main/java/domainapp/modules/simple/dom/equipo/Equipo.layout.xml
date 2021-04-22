@@ -34,6 +34,11 @@
                                 <c:property id="denominacion" namedEscaped="true"></c:property>
                                 <c:property id="modelo" namedEscaped="true"></c:property>
                                 <c:property id="horometro" namedEscaped="true"></c:property>
+                                <c:property id="horasProximoMantenimiento" namedEscaped="true"></c:property>
+                                <c:property id="fechaUltimoMantenimiento" namedEscaped="true"></c:property>
+                                <c:property id="porcentajeDisponibilidadMensual" namedEscaped="true"></c:property>
+                                <c:property id="rpm" namedEscaped="true"></c:property>
+                                <c:property id="presionAceite" namedEscaped="true"></c:property>
                             </c:fieldSet>
                         </bs3:col>
                     </bs3:row>
