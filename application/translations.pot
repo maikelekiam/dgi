@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-22 23:22:54+\n"
+"POT-Creation-Date: 2021-04-23 12:23:08+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -76,6 +76,11 @@ msgid "Action Owning Type"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.planta.Planta#update()
+msgid "Actualizar"
+msgstr ""
+
+
 #: org.apache.isis.core.runtime.system.session.IsisSessionFactoryBuilder
 msgid "Are you sure?"
 msgstr ""
@@ -114,6 +119,11 @@ msgstr ""
 #: domainapp.modules.simple.dom.planta.Planta#cliente
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#create(java.lang.String,java.lang.String,java.lang.String)
 msgid "Cliente"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.planta.Planta#update(java.lang.String,java.lang.String,java.lang.String)
+msgid "Cliente: "
 msgstr ""
 
 
@@ -391,6 +401,11 @@ msgid "Nombre"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.planta.Planta#update(java.lang.String,java.lang.String,java.lang.String)
+msgid "Nombre: "
+msgstr ""
+
+
 #: org.apache.isis.applib.services.layout.LayoutService$Style#NORMALIZED
 msgid "Normalized"
 msgstr ""
@@ -517,6 +532,11 @@ msgstr ""
 #: domainapp.modules.simple.dom.planta.Planta#provincia
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#create(java.lang.String,java.lang.String,java.lang.String)
 msgid "Provincia"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.planta.Planta#update(java.lang.String,java.lang.String,java.lang.String)
+msgid "Provincia: "
 msgstr ""
 
 

@@ -18,7 +18,6 @@
  */
 package domainapp.modules.simple.dom.planta;
 
-import domainapp.modules.simple.dom.planta.Planta;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
