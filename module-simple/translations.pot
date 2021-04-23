@@ -23,11 +23,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-22 14:07:26+\n"
+"POT-Creation-Date: 2021-04-22 23:22:34+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#porcentajeDisponibilidadMensual
+msgid "%"
+msgstr ""
 
 
 #: org.apache.isis.applib.services.metamodel.MetaModelServicesMenu#downloadMetaModel(java.lang.String)
@@ -163,7 +168,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#denominacion
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#findByName(java.lang.String)
 msgid "Denominacion"
 msgstr ""
@@ -237,6 +242,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio
+#: domainapp.modules.simple.dom.planta.Planta#listaEquipos
 msgid "Equipos"
 msgstr ""
 
@@ -252,7 +258,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#fechaUltimoMantenimiento
-msgid "Fecha Ultimo Mantenimiento"
+msgid "Fecha"
 msgstr ""
 
 
@@ -285,18 +291,14 @@ msgid "HSQL DB Manager"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.Equipo#horasProximoMantenimiento
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 msgid "Horas"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.Equipo#horasProximoMantenimiento
-msgid "Horas Proximo Mantenimiento"
-msgstr ""
-
-
 #: domainapp.modules.simple.dom.equipo.Equipo#horometro
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 msgid "Horometro"
 msgstr ""
 
@@ -367,7 +369,7 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#modelo
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 msgid "Modelo"
 msgstr ""
 
@@ -445,18 +447,19 @@ msgid "Parameters"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#planta
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+msgid "Planta"
+msgstr ""
+
+
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio
 msgid "Plantas"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 msgid "Porcentaje"
-msgstr ""
-
-
-#: domainapp.modules.simple.dom.equipo.Equipo#porcentajeDisponibilidadMensual
-msgid "Porcentaje Disponibilidad Mensual"
 msgstr ""
 
 
@@ -470,13 +473,9 @@ msgid "Pre Value"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
-msgid "Presion"
-msgstr ""
-
-
 #: domainapp.modules.simple.dom.equipo.Equipo#presionAceite
-msgid "Presion Aceite"
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+msgid "Presion"
 msgstr ""
 
 
@@ -566,11 +565,6 @@ msgid "Result key"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.Equipo#rpm
-msgid "Rpm"
-msgstr ""
-
-
 #: org.apache.isis.applib.fixturescripts.FixtureScripts#runFixtureScript()
 #: org.apache.isis.applib.services.fixturespec.FixtureScriptsDefault#runFixtureScript()
 #: org.apache.isis.applib.services.fixturespec.FixtureScriptsDefault#runFixtureScriptWithAutoComplete()
@@ -632,7 +626,7 @@ msgid "Type"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 msgid "Ultimo"
 msgstr ""
 
@@ -677,7 +671,8 @@ msgid "datanucleusIdLong"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int)
+#: domainapp.modules.simple.dom.equipo.Equipo#rpm
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
 msgid "rpm"
 msgstr ""
 

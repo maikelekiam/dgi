@@ -19,20 +19,20 @@
 package domainapp.modules.simple.dom.planta;
 
 import com.google.common.collect.ComparisonChain;
+import domainapp.modules.simple.dom.equipo.Equipo;
 import lombok.AccessLevel;
 import org.apache.isis.applib.annotation.*;
-import org.apache.isis.applib.services.i18n.TranslatableString;
 import org.apache.isis.applib.services.message.MessageService;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.VersionStrategy;
-
-import static org.apache.isis.applib.annotation.CommandReification.ENABLED;
-import static org.apache.isis.applib.annotation.SemanticsOf.IDEMPOTENT;
-import static org.apache.isis.applib.annotation.SemanticsOf.NON_IDEMPOTENT_ARE_YOU_SURE;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE, schema = "simple")
 @javax.jdo.annotations.DatastoreIdentity(strategy=javax.jdo.annotations.IdGeneratorStrategy.IDENTITY, column="id")
@@ -54,14 +54,22 @@ public class Planta implements Comparable<Planta> {
     @Column(allowsNull = "false", length = 40)
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
-    @MemberOrder(sequence = "1")
+    @MemberOrder(sequence = "2")
     private String provincia;
 
     @Column(allowsNull = "false", length = 40)
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
-    @MemberOrder(sequence = "1")
+    @MemberOrder(sequence = "3")
     private String cliente;
+
+    @Column(allowsNull = "true")
+    @lombok.NonNull
+    @MemberOrder(sequence = "4")
+    @Persistent(mappedBy="planta", dependentElement="true")
+    @CollectionLayout(named="Equipos")
+    private SortedSet<Equipo> listaEquipos = new TreeSet<Equipo>();
+
 
     @Override
     public String toString() {

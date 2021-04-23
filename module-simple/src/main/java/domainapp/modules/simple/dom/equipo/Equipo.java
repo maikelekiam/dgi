@@ -19,6 +19,7 @@
 package domainapp.modules.simple.dom.equipo;
 
 import com.google.common.collect.ComparisonChain;
+import domainapp.modules.simple.dom.planta.Planta;
 import lombok.AccessLevel;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.message.MessageService;
@@ -62,32 +63,44 @@ public class Equipo implements Comparable<Equipo> {
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
+    @PropertyLayout(named = "Horas")
     @MemberOrder(sequence = "4")
     private int horasProximoMantenimiento;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
+    @PropertyLayout(named = "Fecha")
     @MemberOrder(sequence = "5")
     private LocalDate fechaUltimoMantenimiento;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
+    @PropertyLayout(named = "%")
     @MemberOrder(sequence = "6")
     private int porcentajeDisponibilidadMensual;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
+    @PropertyLayout(named = "rpm")
     @MemberOrder(sequence = "7")
     private int rpm;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property(editing = Editing.ENABLED)
+    @PropertyLayout(named = "Presion")
     @MemberOrder(sequence = "8")
     private int presionAceite;
+
+    @Column(allowsNull = "false")
+    @lombok.NonNull
+    @Property(editing = Editing.ENABLED)
+    @MemberOrder(sequence = "9")
+    private Planta planta;
+
 
     @Override
     public String toString() {

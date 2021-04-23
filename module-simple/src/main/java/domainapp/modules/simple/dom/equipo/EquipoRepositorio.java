@@ -19,16 +19,15 @@
 package domainapp.modules.simple.dom.equipo;
 
 
+import domainapp.modules.simple.dom.planta.Planta;
+import domainapp.modules.simple.dom.planta.PlantaRepositorio;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
-import org.apache.isis.core.metamodel.facets.object.promptStyle.PromptStyleConfiguration;
 import org.datanucleus.query.typesafe.TypesafeQuery;
 import org.joda.time.LocalDate;
 
-
-import java.awt.*;
 import java.util.List;
 
 @DomainService(
@@ -87,6 +86,7 @@ public class EquipoRepositorio {
     }
 
     public static class CreateDomainEvent extends ActionDomainEvent<EquipoRepositorio> {}
+
     @Action(domainEvent = CreateDomainEvent.class)
     @ActionLayout(named = "Crear equipo")
     @MemberOrder(sequence = "3")
@@ -98,15 +98,25 @@ public class EquipoRepositorio {
             final @ParameterLayout(named="Ultimo") LocalDate fechaUltimoMantenimiento,
             final @ParameterLayout(named="Porcentaje") int porcentajeDisponibilidadMensual,
             final @ParameterLayout(named="rpm") int rpm,
-            final @ParameterLayout(named="Presion") int presionAceite
+            final @ParameterLayout(named="Presion") int presionAceite,
+
+            final @Parameter(optionality = Optionality.MANDATORY)
+            @ParameterLayout(named="Planta") Planta planta
     ) {
-        return repositoryService.persist(new Equipo(denominacion,modelo,horometro,horasProximoMantenimiento,fechaUltimoMantenimiento,porcentajeDisponibilidadMensual,rpm,presionAceite));
+        return repositoryService.persist(new Equipo(denominacion,modelo,horometro,horasProximoMantenimiento,fechaUltimoMantenimiento,porcentajeDisponibilidadMensual,rpm,presionAceite, planta));
     }
+
+    // ESTO ES PARA EL DROPDOWNLIST DEL CREAR EQUIPO
+    public List<Planta> choices8Create() {return plantaRepositorio.listAll();}
+
 
     @javax.inject.Inject
     RepositoryService repositoryService;
 
     @javax.inject.Inject
     IsisJdoSupport isisJdoSupport;
+
+    @javax.inject.Inject
+    PlantaRepositorio plantaRepositorio;
 
 }
