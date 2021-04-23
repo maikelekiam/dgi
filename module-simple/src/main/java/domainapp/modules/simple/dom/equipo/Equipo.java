@@ -20,6 +20,7 @@ package domainapp.modules.simple.dom.equipo;
 
 import com.google.common.collect.ComparisonChain;
 import domainapp.modules.simple.dom.planta.Planta;
+import domainapp.modules.simple.dom.planta.PlantaRepositorio;
 import lombok.AccessLevel;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.message.MessageService;
@@ -30,6 +31,7 @@ import org.joda.time.LocalDate;
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.VersionStrategy;
+import java.util.List;
 
 @javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE, schema = "simple")
 @javax.jdo.annotations.DatastoreIdentity(strategy=javax.jdo.annotations.IdGeneratorStrategy.IDENTITY, column="id")
@@ -43,61 +45,60 @@ public class Equipo implements Comparable<Equipo> {
 
     @Column(allowsNull = "false", length = 40)
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
+    @Property()
     @Title(prepend = "Equipo: ")
     @MemberOrder(sequence = "1")
     private String denominacion;
 
     @Column(allowsNull = "false", length = 40)
-    @Property(editing = Editing.ENABLED)
     @lombok.NonNull
+    @Property()
     @MemberOrder(sequence = "2")
     private String modelo;
 
     @Column(allowsNull = "false")
-    @Property(editing = Editing.ENABLED)
     @lombok.NonNull
+    @Property()
     @MemberOrder(sequence = "3")
     private int horometro;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
+    @Property()
     @PropertyLayout(named = "Horas")
     @MemberOrder(sequence = "4")
     private int horasProximoMantenimiento;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
+    @Property()
     @PropertyLayout(named = "Fecha")
     @MemberOrder(sequence = "5")
     private LocalDate fechaUltimoMantenimiento;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
+    @Property()
     @PropertyLayout(named = "%")
     @MemberOrder(sequence = "6")
     private int porcentajeDisponibilidadMensual;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
+    @Property()
     @PropertyLayout(named = "rpm")
     @MemberOrder(sequence = "7")
     private int rpm;
 
     @Column(allowsNull = "false")
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
+    @Property()
     @PropertyLayout(named = "Presion")
     @MemberOrder(sequence = "8")
     private int presionAceite;
 
-    @Column(allowsNull = "false")
+    @Column(allowsNull = "true")
     @lombok.NonNull
-    @Property(editing = Editing.ENABLED)
     @MemberOrder(sequence = "9")
     private Planta planta;
 
@@ -113,6 +114,49 @@ public class Equipo implements Comparable<Equipo> {
                 .result();
     }
 
+    // ACTUALIZAR EQUIPO
+    @Action()
+    @ActionLayout(named = "Actualizar")
+    public Equipo update(
+            final @ParameterLayout(named="Denominacion") String denominacion,
+            final @ParameterLayout(named="Modelo") String modelo,
+            final @ParameterLayout(named="Horometro") int horometro,
+            final @ParameterLayout(named="Horas") int horasProximoMantenimiento,
+            final @ParameterLayout(named="Ultimo") LocalDate fechaUltimoMantenimiento,
+            final @ParameterLayout(named="Porcentaje") int porcentajeDisponibilidadMensual,
+            final @ParameterLayout(named="rpm") int rpm,
+            final @ParameterLayout(named="Presion") int presionAceite,
+
+            final @Parameter(optionality = Optionality.MANDATORY)
+            @ParameterLayout(named="Planta") Planta planta
+           ){
+
+        this.denominacion=denominacion;
+        this.modelo=modelo;
+        this.horometro=horometro;
+        this.horasProximoMantenimiento=horasProximoMantenimiento;
+        this.fechaUltimoMantenimiento=fechaUltimoMantenimiento;
+        this.porcentajeDisponibilidadMensual=porcentajeDisponibilidadMensual;
+        this.rpm=rpm;
+        this.presionAceite=presionAceite;
+        this.planta=planta;
+
+        return this;
+    }
+
+    public String default0Update() {return getDenominacion();}
+    public String default1Update() {return getModelo();}
+    public int default2Update() {return getHorometro();}
+    public int default3Update() {return getHorasProximoMantenimiento();}
+    public LocalDate default4Update() {return getFechaUltimoMantenimiento();}
+    public int default5Update() {return getPorcentajeDisponibilidadMensual();}
+    public int default6Update() {return getRpm();}
+    public int default7Update() {return getPresionAceite();}
+
+    public Planta default8Update() {return getPlanta();}
+
+    public List<Planta> choices8Update() {return plantaRepositorio.listAll();}
+
     @javax.inject.Inject
     @javax.jdo.annotations.NotPersistent
     @lombok.Getter(AccessLevel.NONE) @lombok.Setter(AccessLevel.NONE)
@@ -127,5 +171,10 @@ public class Equipo implements Comparable<Equipo> {
     @javax.jdo.annotations.NotPersistent
     @lombok.Getter(AccessLevel.NONE) @lombok.Setter(AccessLevel.NONE)
     MessageService messageService;
+
+    @javax.inject.Inject
+    @javax.jdo.annotations.NotPersistent
+    @lombok.Getter(AccessLevel.NONE) @lombok.Setter(AccessLevel.NONE)
+    PlantaRepositorio plantaRepositorio;
 
 }
