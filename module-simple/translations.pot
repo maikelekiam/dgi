@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-26 10:18:25+\n"
+"POT-Creation-Date: 2021-04-26 13:03:25+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -107,6 +107,12 @@ msgid "Cancel"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#caudalDiario
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "Caudal diario"
+msgstr ""
+
+
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract#targetClass
 msgid "Class"
 msgstr ""
@@ -138,6 +144,11 @@ msgid "Complete"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio
+msgid "Compresores"
+msgstr ""
+
+
 #: org.apache.isis.applib.services.config.ConfigurationServiceMenu#configuration()
 msgid "Configuration"
 msgstr ""
@@ -145,6 +156,11 @@ msgstr ""
 
 #: org.apache.isis.core.runtime.system.session.IsisSessionFactoryBuilder
 msgid "Confirm"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create()
+msgid "Crear compresor"
 msgstr ""
 
 
@@ -196,6 +212,7 @@ msgid "Domain Change"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.equipo.Equipo#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.planta.Planta#downloadJdoMetadata()
@@ -203,6 +220,7 @@ msgid "Download Jdo Metadata"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#downloadLayoutXml()
 #: domainapp.modules.simple.dom.equipo.Equipo#downloadLayoutXml()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadLayoutXml()
 #: domainapp.modules.simple.dom.planta.Planta#downloadLayoutXml()
@@ -283,6 +301,7 @@ msgid "Filename"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#findByName()
 #: domainapp.modules.simple.dom.impl.SimpleObjects#findByName()
 msgid "Find By Name"
 msgstr ""
@@ -311,6 +330,7 @@ msgid "Horometro"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#datanucleusIdLong()
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusIdLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusIdLong()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusIdLong()
@@ -344,6 +364,7 @@ msgid "Key"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#listAll()
 #: domainapp.modules.simple.dom.impl.SimpleObjects#listAll()
 msgid "List All"
 msgstr ""
@@ -428,6 +449,7 @@ msgid "Open"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#openRestApi()
 #: domainapp.modules.simple.dom.equipo.Equipo#openRestApi()
 #: domainapp.modules.simple.dom.impl.SimpleObject#openRestApi()
 #: domainapp.modules.simple.dom.planta.Planta#openRestApi()
@@ -557,6 +579,7 @@ msgid "Published Interaction"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#rebuildMetamodel()
 #: domainapp.modules.simple.dom.equipo.Equipo#rebuildMetamodel()
 #: domainapp.modules.simple.dom.impl.SimpleObject#rebuildMetamodel()
 #: domainapp.modules.simple.dom.planta.Planta#rebuildMetamodel()
@@ -628,6 +651,13 @@ msgid "Switch To Writing Translations"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#tag
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#findByName(java.lang.String)
+msgid "TAG"
+msgstr ""
+
+
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract
 msgid "Target"
 msgstr ""
@@ -635,6 +665,24 @@ msgstr ""
 
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract
 msgid "TargetStr"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion1
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "Temp Succion 1"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion2
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "Temp Succion 2"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion3
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "Temp Succion 3"
 msgstr ""
 
 
@@ -679,6 +727,8 @@ msgid "Value"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.compresor.Compresor#datanucleusVersionLong()
+#: domainapp.modules.simple.dom.compresor.Compresor#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionLong()
@@ -701,6 +751,30 @@ msgstr ""
 #: org.apache.isis.applib.services.layout.Object_rebuildMetamodel
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_downloadJdoMetadata
 msgid "datanucleusIdLong"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#pd
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "pd"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#ps1
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "ps1"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#ps2
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "ps2"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#ps3
+#: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
+msgid "ps3"
 msgstr ""
 
 

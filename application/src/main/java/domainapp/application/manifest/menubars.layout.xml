@@ -64,6 +64,20 @@
                 </mb3:serviceAction>
             </mb3:section>
         </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Compresores</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.CompresorMenu" id="create">
+                    <cpt:named>Crear compresor</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.CompresorMenu" id="findByName">
+                    <cpt:named>Buscar compresor</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.CompresorMenu" id="listAll">
+                    <cpt:named>Listar compresores</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
         <mb3:menu unreferencedActions="true">
             <mb3:named>Other</mb3:named>
         </mb3:menu>
