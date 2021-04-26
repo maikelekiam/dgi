@@ -1,18 +1,14 @@
-2021-04-23 12:24:46.080 83a6caa6-5882-47f3-9eb1-f0911b2a4c21,0: simple.Planta:1 by sven, nombre: [NEW] -> p1
-2021-04-23 12:24:46.081 83a6caa6-5882-47f3-9eb1-f0911b2a4c21,0: simple.Planta:1 by sven, provincia: [NEW] -> p2
-2021-04-23 12:24:46.081 83a6caa6-5882-47f3-9eb1-f0911b2a4c21,0: simple.Planta:1 by sven, cliente: [NEW] -> p3
-2021-04-23 12:25:19.539 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, denominacion: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, modelo: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, horometro: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, horasProximoMantenimiento: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-04-01
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, porcentajeDisponibilidadMensual: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, rpm: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, presionAceite: [NEW] -> 1
-2021-04-23 12:25:19.540 d5b98368-3204-4508-8ff9-68e23f1b2fed,0: simple.Equipo:1 by sven, planta: [NEW] -> p1
-2021-04-23 12:25:37.632 b4fe4738-c3bb-43ef-bcaa-c4f6c38b51f4,0: simple.Planta:2 by sven, nombre: [NEW] -> p2
-2021-04-23 12:25:37.632 b4fe4738-c3bb-43ef-bcaa-c4f6c38b51f4,0: simple.Planta:2 by sven, provincia: [NEW] -> p2
-2021-04-23 12:25:37.632 b4fe4738-c3bb-43ef-bcaa-c4f6c38b51f4,0: simple.Planta:2 by sven, cliente: [NEW] -> p2
-2021-04-23 12:25:52.314 6ffea49b-4799-49f2-8d3c-a0c6608c0f7c,0: simple.Planta:2 by sven, nombre: p2 -> p22
-2021-04-23 12:25:52.315 6ffea49b-4799-49f2-8d3c-a0c6608c0f7c,0: simple.Planta:2 by sven, provincia: p2 -> p22
-2021-04-23 12:25:52.315 6ffea49b-4799-49f2-8d3c-a0c6608c0f7c,0: simple.Planta:2 by sven, cliente: p2 -> p22
+2021-04-26 10:21:04.193 d903e7b1-6f7d-4643-b656-7a3b46d01db3,0: simple.Planta:1 by sven, nombre: [NEW] -> Planta 1
+2021-04-26 10:21:04.195 d903e7b1-6f7d-4643-b656-7a3b46d01db3,0: simple.Planta:1 by sven, provincia: [NEW] -> Neuquen
+2021-04-26 10:21:04.195 d903e7b1-6f7d-4643-b656-7a3b46d01db3,0: simple.Planta:1 by sven, cliente: [NEW] -> YPF
+2021-04-26 10:25:44.236 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, denominacion: [NEW] -> Equipo 1
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, modelo: [NEW] -> E1
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, horometro: [NEW] -> 1590.0
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, horasProximoMantenimiento: [NEW] -> 300.0
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-04-01
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, porcentajeDisponibilidadMensual: [NEW] -> 55.6
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, rpm: [NEW] -> 123
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, presionAceite: [NEW] -> 40.2
+2021-04-26 10:25:44.237 a1deb232-9561-40c0-9ab6-9677ece0fe84,0: simple.Equipo:1 by sven, planta: [NEW] -> Planta 1
+2021-04-26 10:26:24.882 d999d9ca-f733-49e7-b89e-aaabd4985686,0: simple.Equipo:1 by sven, porcentajeDisponibilidadMensual: 55.6 -> 555.0
+2021-04-26 10:26:36.349 c9d1c6bd-4471-48a6-9df8-21234f91d6d4,0: simple.Equipo:1 by sven, porcentajeDisponibilidadMensual: 555.0 -> 55.5

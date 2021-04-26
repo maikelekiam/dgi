@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-23 12:23:08+\n"
+"POT-Creation-Date: 2021-04-26 10:18:44+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -76,6 +76,7 @@ msgid "Action Owning Type"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#update()
 #: domainapp.modules.simple.dom.planta.Planta#update()
 msgid "Actualizar"
 msgstr ""
@@ -178,7 +179,8 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#denominacion
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#findByName(java.lang.String)
 msgid "Denominacion"
 msgstr ""
@@ -264,11 +266,6 @@ msgid "Fallback"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.Equipo#fechaUltimoMantenimiento
-msgid "Fecha"
-msgstr ""
-
-
 #: org.apache.isis.applib.services.dto.Dto_downloadXml#act(java.lang.String)
 #: org.apache.isis.applib.services.dto.Dto_downloadXsd#act(java.lang.String,org.apache.isis.applib.services.jaxb.JaxbService$IsisSchemas)
 #: org.apache.isis.applib.services.layout.LayoutServiceMenu#downloadMenuBarsLayout(java.lang.String,org.apache.isis.applib.services.menu.MenuBarsService$Type)
@@ -303,14 +300,15 @@ msgid "Home Page"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.Equipo#horasProximoMantenimiento
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Horas"
 msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#horometro
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Horometro"
 msgstr ""
 
@@ -381,7 +379,8 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#modelo
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Modelo"
 msgstr ""
 
@@ -468,7 +467,8 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#planta
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Planta"
 msgstr ""
 
@@ -478,7 +478,8 @@ msgid "Plantas"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Porcentaje"
 msgstr ""
 
@@ -494,7 +495,8 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#presionAceite
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Presion"
 msgstr ""
 
@@ -537,6 +539,11 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.planta.Planta#update(java.lang.String,java.lang.String,java.lang.String)
 msgid "Provincia: "
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#horasProximoMantenimiento
+msgid "Proximo (horas)"
 msgstr ""
 
 
@@ -654,8 +661,14 @@ msgid "Type"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Ultimo"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.equipo.Equipo#fechaUltimoMantenimiento
+msgid "Ultimo (fecha)"
 msgstr ""
 
 
@@ -700,7 +713,8 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.equipo.Equipo#rpm
-#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,int,int,org.joda.time.LocalDate,int,int,int,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
+#: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "rpm"
 msgstr ""
 

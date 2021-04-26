@@ -93,12 +93,12 @@ public class EquipoRepositorio {
     public Equipo create(
             final @ParameterLayout(named="Denominacion") String denominacion,
             final @ParameterLayout(named="Modelo") String modelo,
-            final @ParameterLayout(named="Horometro") int horometro,
-            final @ParameterLayout(named="Horas") int horasProximoMantenimiento,
+            final @ParameterLayout(named="Horometro") double horometro,
+            final @ParameterLayout(named="Horas") double horasProximoMantenimiento,
             final @ParameterLayout(named="Ultimo") LocalDate fechaUltimoMantenimiento,
-            final @ParameterLayout(named="Porcentaje") int porcentajeDisponibilidadMensual,
+            final @ParameterLayout(named="Porcentaje") double porcentajeDisponibilidadMensual,
             final @ParameterLayout(named="rpm") int rpm,
-            final @ParameterLayout(named="Presion") int presionAceite,
+            final @ParameterLayout(named="Presion") double presionAceite,
 
             final @Parameter(optionality = Optionality.MANDATORY)
             @ParameterLayout(named="Planta") Planta planta
