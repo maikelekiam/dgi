@@ -1,8 +1,8 @@
-2021-04-26 14:11:39.864 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+2021-04-26 14:44:31.410 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
     <ixn:majorVersion>1</ixn:majorVersion>
     <ixn:minorVersion>0</ixn:minorVersion>
-    <ixn:transactionId>989ffa95-9b7b-437b-83dc-b977d9709f61</ixn:transactionId>
+    <ixn:transactionId>7b0fb594-ced6-4a80-b30c-36e4ae0b2091</ixn:transactionId>
     <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ixn:sequence>0</ixn:sequence>
         <ixn:target type="homepage.HomePageService" id="1"/>
@@ -12,8 +12,8 @@
         <ixn:title>homepage.HomePageService:1: homePage()</ixn:title>
         <ixn:metrics>
             <ixn:timings>
-                <com:startedAt>2021-04-26T14:11:39.667-03:00</com:startedAt>
-                <com:completedAt>2021-04-26T14:11:39.749-03:00</com:completedAt>
+                <com:startedAt>2021-04-26T14:44:31.212-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:44:31.293-03:00</com:completedAt>
             </ixn:timings>
             <ixn:objectCounts>
                 <ixn:loaded before="0" after="0"/>
@@ -27,69 +27,11 @@
     </ixn:execution>
 </ixn:interactionDto>
 
-2021-04-26 14:11:55.877 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+2021-04-26 14:45:17.492 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
     <ixn:majorVersion>1</ixn:majorVersion>
     <ixn:minorVersion>0</ixn:minorVersion>
-    <ixn:transactionId>ccb0a2a4-b4f8-4a47-a438-92af680b6a87</ixn:transactionId>
-    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <ixn:sequence>0</ixn:sequence>
-        <ixn:target type="simple.MotorMenu" id="1"/>
-        <ixn:logicalMemberIdentifier>simple.MotorMenu#listAll()</ixn:logicalMemberIdentifier>
-        <ixn:memberIdentifier>domainapp.modules.simple.dom.motor.MotorRepositorio#listAll()</ixn:memberIdentifier>
-        <ixn:user>sven</ixn:user>
-        <ixn:title>simple.MotorMenu:1: listAll()</ixn:title>
-        <ixn:metrics>
-            <ixn:timings>
-                <com:startedAt>2021-04-26T14:11:55.866-03:00</com:startedAt>
-                <com:completedAt>2021-04-26T14:11:55.871-03:00</com:completedAt>
-            </ixn:timings>
-            <ixn:objectCounts>
-                <ixn:loaded before="0" after="0"/>
-                <ixn:dirtied before="0" after="0"/>
-            </ixn:objectCounts>
-        </ixn:metrics>
-        <ixn:parameters/>
-        <ixn:returned type="collection" null="false">
-            <com:collection type="reference"/>
-        </ixn:returned>
-    </ixn:execution>
-</ixn:interactionDto>
-
-2021-04-26 14:12:00.133 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
-    <ixn:majorVersion>1</ixn:majorVersion>
-    <ixn:minorVersion>0</ixn:minorVersion>
-    <ixn:transactionId>3fae88cc-0c26-4c4f-829f-717a7747d788</ixn:transactionId>
-    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-        <ixn:sequence>0</ixn:sequence>
-        <ixn:target type="simple.CompresorMenu" id="1"/>
-        <ixn:logicalMemberIdentifier>simple.CompresorMenu#listAll()</ixn:logicalMemberIdentifier>
-        <ixn:memberIdentifier>domainapp.modules.simple.dom.compresor.CompresorRepositorio#listAll()</ixn:memberIdentifier>
-        <ixn:user>sven</ixn:user>
-        <ixn:title>simple.CompresorMenu:1: listAll()</ixn:title>
-        <ixn:metrics>
-            <ixn:timings>
-                <com:startedAt>2021-04-26T14:12:00.120-03:00</com:startedAt>
-                <com:completedAt>2021-04-26T14:12:00.127-03:00</com:completedAt>
-            </ixn:timings>
-            <ixn:objectCounts>
-                <ixn:loaded before="0" after="0"/>
-                <ixn:dirtied before="0" after="0"/>
-            </ixn:objectCounts>
-        </ixn:metrics>
-        <ixn:parameters/>
-        <ixn:returned type="collection" null="false">
-            <com:collection type="reference"/>
-        </ixn:returned>
-    </ixn:execution>
-</ixn:interactionDto>
-
-2021-04-26 14:12:10.880 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
-    <ixn:majorVersion>1</ixn:majorVersion>
-    <ixn:minorVersion>0</ixn:minorVersion>
-    <ixn:transactionId>a40fa320-918e-44df-a326-7dab49b8262a</ixn:transactionId>
+    <ixn:transactionId>a4eaee9e-1719-4212-94f7-712ecccccbd3</ixn:transactionId>
     <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ixn:sequence>0</ixn:sequence>
         <ixn:target type="simple.PlantaMenu" id="1"/>
@@ -99,8 +41,8 @@
         <ixn:title>simple.PlantaMenu:1: create()</ixn:title>
         <ixn:metrics>
             <ixn:timings>
-                <com:startedAt>2021-04-26T14:12:10.753-03:00</com:startedAt>
-                <com:completedAt>2021-04-26T14:12:10.764-03:00</com:completedAt>
+                <com:startedAt>2021-04-26T14:45:17.374-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:45:17.381-03:00</com:completedAt>
             </ixn:timings>
             <ixn:objectCounts>
                 <ixn:loaded before="0" after="0"/>
@@ -109,28 +51,28 @@
         </ixn:metrics>
         <ixn:parameters>
             <cmd:parameter name="Nombre" type="string" null="false">
-                <com:string>1</com:string>
+                <com:string>Planta 1</com:string>
             </cmd:parameter>
             <cmd:parameter name="Provincia" type="string" null="false">
-                <com:string>2</com:string>
+                <com:string>Neuquen</com:string>
             </cmd:parameter>
             <cmd:parameter name="Cliente" type="string" null="false">
-                <com:string>3</com:string>
+                <com:string>YPF</com:string>
             </cmd:parameter>
         </ixn:parameters>
         <ixn:returned type="reference" null="false">
-            <com:reference objectState="transient" type="simple.Planta" id="81023845-49cd-4194-8447-8ade87f5a7d1"/>
+            <com:reference objectState="transient" type="simple.Planta" id="da70c62b-07eb-4fac-8442-319c6d03a67f"/>
         </ixn:returned>
     </ixn:execution>
 </ixn:interactionDto>
 
-2021-04-26 14:12:11.100 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+2021-04-26 14:45:17.703 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
     <chg:majorVersion>1</chg:majorVersion>
     <chg:minorVersion>0</chg:minorVersion>
-    <chg:transactionId>a40fa320-918e-44df-a326-7dab49b8262a</chg:transactionId>
+    <chg:transactionId>a4eaee9e-1719-4212-94f7-712ecccccbd3</chg:transactionId>
     <chg:sequence>3</chg:sequence>
-    <chg:completedAt>2021-04-26T14:12:11.092-03:00</chg:completedAt>
+    <chg:completedAt>2021-04-26T14:45:17.698-03:00</chg:completedAt>
     <chg:user>sven</chg:user>
     <chg:objects>
         <chg:loaded>0</chg:loaded>
@@ -143,11 +85,474 @@
     </chg:objects>
 </chg:changesDto>
 
-2021-04-26 14:12:14.108 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+2021-04-26 14:45:37.801 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
     <ixn:majorVersion>1</ixn:majorVersion>
     <ixn:minorVersion>0</ixn:minorVersion>
-    <ixn:transactionId>5553108b-f81b-4647-a3c4-10f7c2529e6b</ixn:transactionId>
+    <ixn:transactionId>b245bc5e-71cc-404e-a1ad-40122c164aba</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.PlantaMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.PlantaMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.planta.PlantaRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.PlantaMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:45:37.778-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:45:37.778-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="Nombre" type="string" null="false">
+                <com:string>Planta 2</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Provincia" type="string" null="false">
+                <com:string>Rio Negro</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Cliente" type="string" null="false">
+                <com:string>SHELL</com:string>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Planta" id="eadc482a-85a8-4582-8ba3-2e65fa92e147"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:45:37.838 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>b245bc5e-71cc-404e-a1ad-40122c164aba</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:45:37.838-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>0</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Planta" id="2"/>
+        </chg:created>
+        <chg:updated/>
+        <chg:deleted/>
+        <chg:propertiesModified>3</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:45:40.758 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>71413557-addb-43ea-b0ae-90bc1c0df791</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.PlantaMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.PlantaMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.PlantaMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:45:40.743-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:45:40.751-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Planta" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Planta" id="2"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:45:42.340 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>a539c3c3-5eb8-4bc7-9a98-68109e8cbe64</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="homepage.HomePageService" id="1"/>
+        <ixn:logicalMemberIdentifier>homepage.HomePageService#homePage()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.application.services.homepage.HomePageService#homePage()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>homepage.HomePageService:1: homePage()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:45:42.334-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:45:42.336-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="viewModel" type="domainapp.application.services.homepage.HomePageViewModel" id="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPG1lbWVudG8vPg=="/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:45:44.000 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>71ee9b35-8559-4c3f-8123-6a5a6e3532f9</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.PlantaMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.PlantaMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.PlantaMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:45:43.984-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:45:43.997-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Planta" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Planta" id="2"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:46:35.713 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>aa06cb18-3058-4363-9010-5d60bf68a5c3</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.MotorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.MotorMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.motor.MotorRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.MotorMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:46:35.692-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:46:35.693-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="TAG" type="string" null="false">
+                <com:string>Motor 1</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Aceite" type="double" null="false">
+                <com:double>25.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Agua" type="double" null="false">
+                <com:double>35.0</com:double>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Motor" id="e589f71f-7147-46f1-9ba2-5b906b369cfc"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:46:35.761 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>aa06cb18-3058-4363-9010-5d60bf68a5c3</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:46:35.760-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>0</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Motor" id="1"/>
+        </chg:created>
+        <chg:updated/>
+        <chg:deleted/>
+        <chg:propertiesModified>3</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:46:45.497 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>d486d7a2-cafa-4e5b-8478-1e6e965c45c1</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.MotorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.MotorMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.motor.MotorRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.MotorMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:46:45.481-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:46:45.481-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="TAG" type="string" null="false">
+                <com:string>Motor 2</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Aceite" type="double" null="false">
+                <com:double>76.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Agua" type="double" null="false">
+                <com:double>56.0</com:double>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Motor" id="725f9528-5e25-43e9-9bd9-27528225d5b5"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:46:45.525 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>d486d7a2-cafa-4e5b-8478-1e6e965c45c1</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:46:45.524-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>0</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Motor" id="2"/>
+        </chg:created>
+        <chg:updated/>
+        <chg:deleted/>
+        <chg:propertiesModified>3</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:55:36.108 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>49f09508-a7c5-4b50-b38e-f4f54f2de5a6</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.MotorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.MotorMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.motor.MotorRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.MotorMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:55:36.096-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:55:36.102-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Motor" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Motor" id="2"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:56:00.673 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.CompresorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.CompresorMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.compresor.CompresorRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.CompresorMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:56:00.627-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:56:00.627-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="TAG" type="string" null="false">
+                <com:string>Copresor 1</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Succion 1" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="ps1" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Succion 2" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="ps2" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Succion 3" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="ps3" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="pd" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Caudal diario" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Compresor" id="d89052ef-b59f-4104-9176-728598a43443"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:56:00.712 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:56:00.711-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>0</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Compresor" id="1"/>
+        </chg:created>
+        <chg:updated/>
+        <chg:deleted/>
+        <chg:propertiesModified>9</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:56:15.560 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>5f6a6c08-1dfb-435a-9a85-b8f5137785c5</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.CompresorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.CompresorMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.compresor.CompresorRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.CompresorMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:56:15.548-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:56:15.548-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="0"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="TAG" type="string" null="false">
+                <com:string>Compresor 2</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Succion 1" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="ps1" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Succion 2" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="ps2" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Temp Succion 3" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="ps3" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="pd" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Caudal diario" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Compresor" id="3b2f4f89-de03-45a5-8b64-c9a8e370712e"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:56:15.580 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>5f6a6c08-1dfb-435a-9a85-b8f5137785c5</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:56:15.580-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>0</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Compresor" id="2"/>
+        </chg:created>
+        <chg:updated/>
+        <chg:deleted/>
+        <chg:propertiesModified>9</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:56:20.488 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>4dba8ea5-cdaa-4aad-a8ed-f74d2ac5cd21</ixn:transactionId>
     <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <ixn:sequence>0</ixn:sequence>
         <ixn:target type="simple.EquipoMenu" id="1"/>
@@ -157,8 +562,8 @@
         <ixn:title>simple.EquipoMenu:1: listAll()</ixn:title>
         <ixn:metrics>
             <ixn:timings>
-                <com:startedAt>2021-04-26T14:12:14.094-03:00</com:startedAt>
-                <com:completedAt>2021-04-26T14:12:14.103-03:00</com:completedAt>
+                <com:startedAt>2021-04-26T14:56:20.475-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:56:20.483-03:00</com:completedAt>
             </ixn:timings>
             <ixn:objectCounts>
                 <ixn:loaded before="0" after="0"/>
@@ -168,6 +573,390 @@
         <ixn:parameters/>
         <ixn:returned type="collection" null="false">
             <com:collection type="reference"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:56:41.078 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>c488ff24-f15c-4528-8cac-50ca64cc078c</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.EquipoMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.EquipoMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.equipo.EquipoRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.EquipoMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:56:41.061-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:56:41.061-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="3" after="3"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="Denominacion" type="string" null="false">
+                <com:string>Equipo 1</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Modelo" type="string" null="false">
+                <com:string>1</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Horometro" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Horas" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Ultimo" type="jodaLocalDate" null="false">
+                <com:localDate>2021-04-01</com:localDate>
+            </cmd:parameter>
+            <cmd:parameter name="Porcentaje" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="rpm" type="int" null="false">
+                <com:int>1</com:int>
+            </cmd:parameter>
+            <cmd:parameter name="Presion" type="double" null="false">
+                <com:double>1.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Planta" type="reference" null="false">
+                <com:reference type="simple.Planta" id="1"/>
+            </cmd:parameter>
+            <cmd:parameter name="Motor" type="reference" null="false">
+                <com:reference type="simple.Motor" id="1"/>
+            </cmd:parameter>
+            <cmd:parameter name="Compresor" type="reference" null="false">
+                <com:reference type="simple.Compresor" id="1"/>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Equipo" id="78343c9b-477c-4b12-af28-81097d733b14"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:56:41.104 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>c488ff24-f15c-4528-8cac-50ca64cc078c</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:56:41.103-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>3</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Equipo" id="1"/>
+        </chg:created>
+        <chg:updated>
+            <com:oid type="simple.Planta" id="1"/>
+        </chg:updated>
+        <chg:deleted/>
+        <chg:propertiesModified>11</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:57:10.839 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.EquipoMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.EquipoMenu#create()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.equipo.EquipoRepositorio#create()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.EquipoMenu:1: create()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:57:10.830-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:57:10.831-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="4" after="4"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters>
+            <cmd:parameter name="Denominacion" type="string" null="false">
+                <com:string>Equipo 2</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Modelo" type="string" null="false">
+                <com:string>2</com:string>
+            </cmd:parameter>
+            <cmd:parameter name="Horometro" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Horas" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Ultimo" type="jodaLocalDate" null="false">
+                <com:localDate>2021-04-02</com:localDate>
+            </cmd:parameter>
+            <cmd:parameter name="Porcentaje" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="rpm" type="int" null="false">
+                <com:int>2</com:int>
+            </cmd:parameter>
+            <cmd:parameter name="Presion" type="double" null="false">
+                <com:double>2.0</com:double>
+            </cmd:parameter>
+            <cmd:parameter name="Planta" type="reference" null="false">
+                <com:reference type="simple.Planta" id="1"/>
+            </cmd:parameter>
+            <cmd:parameter name="Motor" type="reference" null="false">
+                <com:reference type="simple.Motor" id="2"/>
+            </cmd:parameter>
+            <cmd:parameter name="Compresor" type="reference" null="false">
+                <com:reference type="simple.Compresor" id="2"/>
+            </cmd:parameter>
+        </ixn:parameters>
+        <ixn:returned type="reference" null="false">
+            <com:reference objectState="transient" type="simple.Equipo" id="90552dfe-c075-41ab-a865-ca161f435ee8"/>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:57:10.861 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2021-04-26T14:57:10.860-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>4</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.Equipo" id="2"/>
+        </chg:created>
+        <chg:updated>
+            <com:oid type="simple.Planta" id="1"/>
+        </chg:updated>
+        <chg:deleted/>
+        <chg:propertiesModified>11</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+
+2021-04-26 14:57:13.704 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>fff1736b-b441-4756-a7b0-124b78e10048</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.PlantaMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.PlantaMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.PlantaMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:57:13.693-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:57:13.699-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Planta" id="2"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Planta" id="1"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:58:18.645 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>0ef6c48e-3540-4e94-8523-7931cef5c5ad</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.EquipoMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.EquipoMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.equipo.EquipoRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.EquipoMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:58:18.629-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:58:18.634-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Equipo" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Equipo" id="2"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:58:22.500 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>71c0c152-1cce-46e6-81d8-f0ce97a480aa</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.EquipoMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.EquipoMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.equipo.EquipoRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.EquipoMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:58:22.486-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:58:22.497-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Equipo" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Equipo" id="2"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:58:26.494 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>3feeeb27-24b8-476c-b46f-1f6c13aa48ce</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.PlantaMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.PlantaMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.PlantaMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:58:26.482-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:58:26.488-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Planta" id="2"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Planta" id="1"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:58:48.616 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>8d8053c3-128b-4985-ac70-35f4aa15f98a</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.MotorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.MotorMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.motor.MotorRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.MotorMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:58:48.606-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:58:48.609-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Motor" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Motor" id="2"/>
+                </com:value>
+            </com:collection>
+        </ixn:returned>
+    </ixn:execution>
+</ixn:interactionDto>
+
+2021-04-26 14:58:54.686 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ixn:interactionDto xmlns:com="http://isis.apache.org/schema/common" xmlns:cmd="http://isis.apache.org/schema/cmd" xmlns:ixn="http://isis.apache.org/schema/ixn">
+    <ixn:majorVersion>1</ixn:majorVersion>
+    <ixn:minorVersion>0</ixn:minorVersion>
+    <ixn:transactionId>9203c9f0-618f-41ef-bf47-6c97b5d0c724</ixn:transactionId>
+    <ixn:execution xsi:type="ixn:actionInvocationDto" interactionType="action_invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ixn:sequence>0</ixn:sequence>
+        <ixn:target type="simple.CompresorMenu" id="1"/>
+        <ixn:logicalMemberIdentifier>simple.CompresorMenu#listAll()</ixn:logicalMemberIdentifier>
+        <ixn:memberIdentifier>domainapp.modules.simple.dom.compresor.CompresorRepositorio#listAll()</ixn:memberIdentifier>
+        <ixn:user>sven</ixn:user>
+        <ixn:title>simple.CompresorMenu:1: listAll()</ixn:title>
+        <ixn:metrics>
+            <ixn:timings>
+                <com:startedAt>2021-04-26T14:58:54.678-03:00</com:startedAt>
+                <com:completedAt>2021-04-26T14:58:54.681-03:00</com:completedAt>
+            </ixn:timings>
+            <ixn:objectCounts>
+                <ixn:loaded before="0" after="2"/>
+                <ixn:dirtied before="0" after="0"/>
+            </ixn:objectCounts>
+        </ixn:metrics>
+        <ixn:parameters/>
+        <ixn:returned type="collection" null="false">
+            <com:collection type="reference">
+                <com:value>
+                    <com:reference type="simple.Compresor" id="1"/>
+                </com:value>
+                <com:value>
+                    <com:reference type="simple.Compresor" id="2"/>
+                </com:value>
+            </com:collection>
         </ixn:returned>
     </ixn:execution>
 </ixn:interactionDto>

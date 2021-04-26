@@ -19,6 +19,10 @@
 package domainapp.modules.simple.dom.equipo;
 
 
+import domainapp.modules.simple.dom.compresor.Compresor;
+import domainapp.modules.simple.dom.compresor.CompresorRepositorio;
+import domainapp.modules.simple.dom.motor.Motor;
+import domainapp.modules.simple.dom.motor.MotorRepositorio;
 import domainapp.modules.simple.dom.planta.Planta;
 import domainapp.modules.simple.dom.planta.PlantaRepositorio;
 import org.apache.isis.applib.annotation.*;
@@ -101,14 +105,25 @@ public class EquipoRepositorio {
             final @ParameterLayout(named="Presion") double presionAceite,
 
             final @Parameter(optionality = Optionality.MANDATORY)
-            @ParameterLayout(named="Planta") Planta planta
+            @ParameterLayout(named="Planta") Planta planta,
+
+            final @Parameter(optionality = Optionality.MANDATORY)
+            @ParameterLayout(named="Motor") Motor motor,
+
+            final @Parameter(optionality = Optionality.MANDATORY)
+            @ParameterLayout(named="Compresor") Compresor compresor
     ) {
-        return repositoryService.persist(new Equipo(denominacion,modelo,horometro,horasProximoMantenimiento,fechaUltimoMantenimiento,porcentajeDisponibilidadMensual,rpm,presionAceite, planta));
+        return repositoryService.persist(new Equipo(denominacion,modelo,horometro,horasProximoMantenimiento,fechaUltimoMantenimiento,porcentajeDisponibilidadMensual,rpm,presionAceite, planta, motor, compresor));
     }
 
     // ESTO ES PARA EL DROPDOWNLIST DEL CREAR EQUIPO
     public List<Planta> choices8Create() {return plantaRepositorio.listAll();}
 
+    // ESTO ES PARA EL DROPDOWNLIST DEL CREAR EQUIPO
+    public List<Motor> choices9Create() {return motorRepositorio.listAll();}
+
+    // ESTO ES PARA EL DROPDOWNLIST DEL CREAR EQUIPO
+    public List<Compresor> choices10Create() {return compresorRepositorio.listAll();}
 
     @javax.inject.Inject
     RepositoryService repositoryService;
@@ -119,4 +134,9 @@ public class EquipoRepositorio {
     @javax.inject.Inject
     PlantaRepositorio plantaRepositorio;
 
+    @javax.inject.Inject
+    CompresorRepositorio compresorRepositorio;
+
+    @javax.inject.Inject
+    MotorRepositorio motorRepositorio;
 }

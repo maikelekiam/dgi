@@ -19,6 +19,8 @@
 package domainapp.modules.simple.dom.equipo;
 
 import com.google.common.collect.ComparisonChain;
+import domainapp.modules.simple.dom.compresor.Compresor;
+import domainapp.modules.simple.dom.motor.Motor;
 import domainapp.modules.simple.dom.planta.Planta;
 import domainapp.modules.simple.dom.planta.PlantaRepositorio;
 import lombok.AccessLevel;
@@ -109,6 +111,20 @@ public class Equipo implements Comparable<Equipo> {
     @PropertyLayout(named = "Planta")
     @MemberOrder(sequence = "9")
     private Planta planta;
+
+    @Column(allowsNull = "true")
+    @lombok.NonNull
+    @Property()
+    @PropertyLayout(named = "Motor")
+    @MemberOrder(sequence = "10")
+    private Motor motor;
+
+    @Column(allowsNull = "true")
+    @lombok.NonNull
+    @Property()
+    @PropertyLayout(named = "Compresor")
+    @MemberOrder(sequence = "11")
+    private Compresor compresor;
 
     @Override
     public String toString() {
