@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-26 13:03:25+\n"
+"POT-Creation-Date: 2021-04-26 14:08:53+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -169,6 +169,11 @@ msgid "Crear equipo"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#create()
+msgid "Crear motor"
+msgstr ""
+
+
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#create()
 msgid "Crear planta: "
 msgstr ""
@@ -215,6 +220,7 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.equipo.Equipo#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadJdoMetadata()
+#: domainapp.modules.simple.dom.motor.Motor#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.planta.Planta#downloadJdoMetadata()
 msgid "Download Jdo Metadata"
 msgstr ""
@@ -223,6 +229,7 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#downloadLayoutXml()
 #: domainapp.modules.simple.dom.equipo.Equipo#downloadLayoutXml()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadLayoutXml()
+#: domainapp.modules.simple.dom.motor.Motor#downloadLayoutXml()
 #: domainapp.modules.simple.dom.planta.Planta#downloadLayoutXml()
 #: org.apache.isis.applib.AbstractViewModel#downloadLayoutXml()
 #: org.apache.isis.applib.ViewModel#downloadLayoutXml()
@@ -303,6 +310,7 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#findByName()
 #: domainapp.modules.simple.dom.impl.SimpleObjects#findByName()
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#findByName()
 msgid "Find By Name"
 msgstr ""
 
@@ -333,6 +341,7 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#datanucleusIdLong()
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusIdLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusIdLong()
+#: domainapp.modules.simple.dom.motor.Motor#datanucleusIdLong()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusIdLong()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusIdLong#prop()
 msgid "Id"
@@ -366,6 +375,7 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#listAll()
 #: domainapp.modules.simple.dom.impl.SimpleObjects#listAll()
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#listAll()
 msgid "List All"
 msgstr ""
 
@@ -401,6 +411,11 @@ msgstr ""
 #: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 msgid "Modelo"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.motor.MotorRepositorio
+msgid "Motores"
 msgstr ""
 
 
@@ -452,6 +467,7 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#openRestApi()
 #: domainapp.modules.simple.dom.equipo.Equipo#openRestApi()
 #: domainapp.modules.simple.dom.impl.SimpleObject#openRestApi()
+#: domainapp.modules.simple.dom.motor.Motor#openRestApi()
 #: domainapp.modules.simple.dom.planta.Planta#openRestApi()
 #: org.apache.isis.applib.AbstractViewModel#openRestApi()
 #: org.apache.isis.applib.ViewModel#openRestApi()
@@ -582,6 +598,7 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#rebuildMetamodel()
 #: domainapp.modules.simple.dom.equipo.Equipo#rebuildMetamodel()
 #: domainapp.modules.simple.dom.impl.SimpleObject#rebuildMetamodel()
+#: domainapp.modules.simple.dom.motor.Motor#rebuildMetamodel()
 #: domainapp.modules.simple.dom.planta.Planta#rebuildMetamodel()
 #: org.apache.isis.applib.AbstractViewModel#rebuildMetamodel()
 #: org.apache.isis.applib.ViewModel#rebuildMetamodel()
@@ -654,6 +671,9 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#tag
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#findByName(java.lang.String)
+#: domainapp.modules.simple.dom.motor.Motor#tag
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#create(java.lang.String,double,double)
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#findByName(java.lang.String)
 msgid "TAG"
 msgstr ""
 
@@ -665,6 +685,18 @@ msgstr ""
 
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract
 msgid "TargetStr"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.motor.Motor#tempAceite
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#create(java.lang.String,double,double)
+msgid "Temp Aceite"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.motor.Motor#tempAgua
+#: domainapp.modules.simple.dom.motor.MotorRepositorio#create(java.lang.String,double,double)
+msgid "Temp Agua"
 msgstr ""
 
 
@@ -733,6 +765,8 @@ msgstr ""
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionTimestamp()
+#: domainapp.modules.simple.dom.motor.Motor#datanucleusVersionLong()
+#: domainapp.modules.simple.dom.motor.Motor#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionTimestamp()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionLong#prop()
