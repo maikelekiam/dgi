@@ -41,6 +41,8 @@
                                 <c:property id="rpm" namedEscaped="true" hidden="ALL_TABLES"></c:property>
                                 <c:property id="presionAceite" namedEscaped="true" hidden="ALL_TABLES"></c:property>
                                 <c:property id="planta" namedEscaped="true"></c:property>
+                                <c:property id="motor" namedEscaped="true"></c:property>
+                                <c:property id="compresor" namedEscaped="true"></c:property>
                             </c:fieldSet>
                         </bs3:col>
                     </bs3:row>
