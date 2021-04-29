@@ -92,6 +92,17 @@
                 </mb3:serviceAction>
             </mb3:section>
         </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Mantenimientos</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.MantenimientoCompresorMenu" id="create">
+                    <cpt:named>Crear mantenimiento</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.MantenimientoCompresorMenu" id="listAll">
+                    <cpt:named>Listar mantenimientos</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
         <mb3:menu unreferencedActions="true">
             <mb3:named>Other</mb3:named>
         </mb3:menu>

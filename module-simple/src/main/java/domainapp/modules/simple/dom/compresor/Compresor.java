@@ -19,6 +19,7 @@
 package domainapp.modules.simple.dom.compresor;
 
 import com.google.common.collect.ComparisonChain;
+import domainapp.modules.simple.dom.mantenimiento.MantenimientoCompresor;
 import lombok.AccessLevel;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.i18n.TranslatableString;
@@ -28,7 +29,10 @@ import org.apache.isis.applib.services.title.TitleService;
 
 import javax.jdo.annotations.Column;
 import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.VersionStrategy;
+
+import java.util.List;
 
 import static org.apache.isis.applib.annotation.CommandReification.ENABLED;
 import static org.apache.isis.applib.annotation.SemanticsOf.IDEMPOTENT;
@@ -107,6 +111,12 @@ public class Compresor implements Comparable<Compresor> {
     @PropertyLayout(named = "Caudal diario")
     @MemberOrder(sequence = "9")
     private double caudalDiario;
+
+
+    @Persistent(mappedBy = "compresor", defaultFetchGroup = "true")
+    @Column(allowsNull = "true")
+    @Property()
+    private List<MantenimientoCompresor> listaMtoCompresor;
 
     @Override
     public String toString() {
