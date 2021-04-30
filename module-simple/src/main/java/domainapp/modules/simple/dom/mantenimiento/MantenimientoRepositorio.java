@@ -19,54 +19,60 @@
 package domainapp.modules.simple.dom.mantenimiento;
 
 import domainapp.modules.simple.dom.compresor.Compresor;
-import domainapp.modules.simple.dom.compresor.CompresorRepositorio;
-import domainapp.modules.simple.dom.planta.Planta;
+import domainapp.modules.simple.dom.equipo.Equipo;
+import domainapp.modules.simple.dom.equipo.EquipoRepositorio;
+import domainapp.modules.simple.dom.motor.Motor;
+import domainapp.modules.simple.dom.motor.MotorRepositorio;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
+import org.datanucleus.query.typesafe.TypesafeQuery;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @DomainService(
         nature = NatureOfService.VIEW_MENU_ONLY,
-        objectType = "simple.MantenimientoCompresorMenu",
-        repositoryFor = MantenimientoCompresor.class
+        objectType = "simple.MantenimientoMenu",
+        repositoryFor = Mantenimiento.class
 )
 @DomainServiceLayout(
         named = "Mantenimientos",
         menuOrder = "10"
 )
-public class MantenimientoCompresorRepositorio {
+public class MantenimientoRepositorio {
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT, named = "Listar Mantenimientos")
     @MemberOrder(sequence = "1")
-    public List<MantenimientoCompresor> listAll() {
-        return repositoryService.allInstances(MantenimientoCompresor.class);
+    public List<Mantenimiento> listAll() {
+        return repositoryService.allInstances(Mantenimiento.class);
     }
 
-    public static class CreateDomainEvent extends ActionDomainEvent<MantenimientoCompresorRepositorio> {}
+    public static class CreateDomainEvent extends ActionDomainEvent<MantenimientoRepositorio> {}
     @Action(domainEvent = CreateDomainEvent.class)
-    @ActionLayout(named = "Crear mantenimiento")
     @MemberOrder(sequence = "2")
-    public MantenimientoCompresor create(
+    public Mantenimiento create(
+            final @ParameterLayout(named="Nombre") String nombre,
+
             final @Parameter(optionality = Optionality.MANDATORY)
-            @ParameterLayout(named="Tipo") ETipoMantenimientoCompresor tipoMantenimientoCompresor,
-            @ParameterLayout(named="Compresor") Compresor compresor
-    ) {
-        return repositoryService.persist(new MantenimientoCompresor(tipoMantenimientoCompresor, compresor));
+            @ParameterLayout(named="Tipo") ETipoMantenimiento tipoMantenimiento,
+
+            final @ParameterLayout(named="Equipo") Equipo equipo
+            ) {
+        return repositoryService.persist(new Mantenimiento(nombre, tipoMantenimiento, equipo));
     }
 
-    // ESTO ES PARA EL DROPDOWNLIST DEL CREAR EQUIPO
-    public List<Compresor> choices1Create() {return compresorRepositorio.listAll();}
+    // ESTO ES PARA EL DROPDOWNLIST
+    public List<Equipo> choices2Create() {return equipoRepositorio.listAll();}
+
+    @javax.inject.Inject
+    EquipoRepositorio equipoRepositorio;
 
 
     @javax.inject.Inject
     RepositoryService repositoryService;
 
     @javax.inject.Inject
-    CompresorRepositorio compresorRepositorio;
+    IsisJdoSupport isisJdoSupport;
 }

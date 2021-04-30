@@ -95,10 +95,10 @@
         <mb3:menu>
             <mb3:named>Mantenimientos</mb3:named>
             <mb3:section>
-                <mb3:serviceAction objectType="simple.MantenimientoCompresorMenu" id="create">
+                <mb3:serviceAction objectType="simple.MantenimientoMenu" id="create">
                     <cpt:named>Crear mantenimiento</cpt:named>
                 </mb3:serviceAction>
-                <mb3:serviceAction objectType="simple.MantenimientoCompresorMenu" id="listAll">
+                <mb3:serviceAction objectType="simple.MantenimientoMenu" id="listAll">
                     <cpt:named>Listar mantenimientos</cpt:named>
                 </mb3:serviceAction>
             </mb3:section>

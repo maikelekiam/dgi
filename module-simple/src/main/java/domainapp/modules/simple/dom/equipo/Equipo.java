@@ -20,6 +20,7 @@ package domainapp.modules.simple.dom.equipo;
 
 import com.google.common.collect.ComparisonChain;
 import domainapp.modules.simple.dom.compresor.Compresor;
+import domainapp.modules.simple.dom.mantenimiento.Mantenimiento;
 import domainapp.modules.simple.dom.motor.Motor;
 import domainapp.modules.simple.dom.planta.Planta;
 import domainapp.modules.simple.dom.planta.PlantaRepositorio;
@@ -125,6 +126,11 @@ public class Equipo implements Comparable<Equipo> {
     @PropertyLayout(named = "Compresor")
     @MemberOrder(sequence = "11")
     private Compresor compresor;
+
+    @Persistent(mappedBy = "equipo", defaultFetchGroup = "true")
+    @Column(allowsNull = "true")
+    @Property()
+    private List<Mantenimiento> listaMantenimientos;
 
     @Override
     public String toString() {
