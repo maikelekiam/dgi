@@ -16,7 +16,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package domainapp.modules.simple.dom.motor;
+package domainapp.modules.simple.dom.tarea;
 
 import com.google.common.collect.ComparisonChain;
 import lombok.AccessLevel;
@@ -26,53 +26,36 @@ import org.apache.isis.applib.services.message.MessageService;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 
-import javax.jdo.annotations.Column;
-import javax.jdo.annotations.IdentityType;
-import javax.jdo.annotations.VersionStrategy;
+import javax.jdo.annotations.*;
 
 import static org.apache.isis.applib.annotation.CommandReification.ENABLED;
 import static org.apache.isis.applib.annotation.SemanticsOf.IDEMPOTENT;
 import static org.apache.isis.applib.annotation.SemanticsOf.NON_IDEMPOTENT_ARE_YOU_SURE;
 
-@javax.jdo.annotations.PersistenceCapable(identityType=IdentityType.DATASTORE, schema = "simple")
-@javax.jdo.annotations.DatastoreIdentity(strategy=javax.jdo.annotations.IdGeneratorStrategy.IDENTITY, column="id")
-@javax.jdo.annotations.Version(strategy= VersionStrategy.DATE_TIME, column="version")
-@javax.jdo.annotations.Unique(name="Motor_tag_UNQ", members = {"tag"})
+@PersistenceCapable(identityType=IdentityType.DATASTORE, schema = "simple")
+@DatastoreIdentity(strategy=javax.jdo.annotations.IdGeneratorStrategy.IDENTITY, column="id")
+@Version(strategy= VersionStrategy.DATE_TIME, column="version")
+@Unique(name="Tarea_nombre_UNQ", members = {"nombre"})
 @DomainObject(auditing = Auditing.ENABLED)
 @DomainObjectLayout()  // causes UI events to be triggered
 @lombok.Getter @lombok.Setter
 @lombok.RequiredArgsConstructor
-public class Motor implements Comparable<Motor> {
+public class Tarea implements Comparable<Tarea> {
 
-    @javax.jdo.annotations.Column(allowsNull = "false", length = 40)
+    @Column(allowsNull = "false", length = 40)
     @lombok.NonNull
     @Property() // editing disabled by default, see isis.properties
-    @Title(prepend = "Motor: ")
-    @MemberOrder(sequence = "1")
-    private String tag;
-
-    @Column(allowsNull = "false")
-    @lombok.NonNull
-    @Property()
-    @PropertyLayout(named = "Temp Aceite")
-    @MemberOrder(sequence = "2")
-    private double tempAceite;
-
-    @Column(allowsNull = "false")
-    @lombok.NonNull
-    @Property()
-    @PropertyLayout(named = "Temp Agua")
-    @MemberOrder(sequence = "3")
-    private double tempAgua;
+    @Title(prepend = "Tarea: ")
+    private String nombre;
 
     @Override
     public String toString() {
-        return getTag();
+        return getNombre();
     }
 
-    public int compareTo(final Motor other) {
+    public int compareTo(final Tarea other) {
         return ComparisonChain.start()
-                .compare(this.getTag(), other.getTag())
+                .compare(this.getNombre(), other.getNombre())
                 .result();
     }
 

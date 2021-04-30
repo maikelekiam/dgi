@@ -50,8 +50,7 @@ public class Compresor implements Comparable<Compresor> {
     @Column(allowsNull = "false", length = 40)
     @lombok.NonNull
     @Property() // editing disabled by default, see isis.properties
-    @PropertyLayout(named = "TAG")
-    @Title(prepend = "TAG: ")
+    @Title(prepend = "Compresor: ")
     @MemberOrder(sequence = "1")
     private String tag;
 
