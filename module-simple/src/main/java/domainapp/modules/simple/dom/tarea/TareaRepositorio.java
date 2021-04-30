@@ -18,6 +18,10 @@
  */
 package domainapp.modules.simple.dom.tarea;
 
+import domainapp.modules.simple.dom.mantenimiento.Mantenimiento;
+import domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio;
+import domainapp.modules.simple.dom.planta.Planta;
+import domainapp.modules.simple.dom.planta.PlantaRepositorio;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
@@ -48,15 +52,26 @@ public class TareaRepositorio {
     @Action(domainEvent = CreateDomainEvent.class)
     @MemberOrder(sequence = "2")
     public Tarea create(
-            @ParameterLayout(named="Nombre")
-            final String nombre) {
-        return repositoryService.persist(new Tarea(nombre));
+            final @ParameterLayout(named="Nombre") String nombre,
+            final @ParameterLayout(named="Detalle") String detalle,
+
+            final @Parameter(optionality = Optionality.MANDATORY)
+            @ParameterLayout(named="Mantenimiento") Mantenimiento mantenimiento
+
+            ) {
+        return repositoryService.persist(new Tarea(nombre, detalle, mantenimiento));
     }
+
+    // ESTO ES PARA EL DROPDOWNLIST
+    public List<Mantenimiento> choices2Create() {return mantenimientoRepositorio.listAll();}
 
     @javax.inject.Inject
     RepositoryService repositoryService;
 
     @javax.inject.Inject
     IsisJdoSupport isisJdoSupport;
+
+    @javax.inject.Inject
+    MantenimientoRepositorio mantenimientoRepositorio;
 
 }

@@ -19,6 +19,8 @@
 package domainapp.modules.simple.dom.tarea;
 
 import com.google.common.collect.ComparisonChain;
+import domainapp.modules.simple.dom.mantenimiento.Mantenimiento;
+import domainapp.modules.simple.dom.planta.Planta;
 import lombok.AccessLevel;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.i18n.TranslatableString;
@@ -46,7 +48,21 @@ public class Tarea implements Comparable<Tarea> {
     @lombok.NonNull
     @Property() // editing disabled by default, see isis.properties
     @Title(prepend = "Tarea: ")
+    @MemberOrder(sequence = "1")
     private String nombre;
+
+    @Column(allowsNull = "false", length = 40)
+    @lombok.NonNull
+    @Property() // editing disabled by default, see isis.properties
+    @MemberOrder(sequence = "2")
+    private String detalle;
+
+    @Column(allowsNull = "true")
+    @lombok.NonNull
+    @Property()
+    @PropertyLayout(named = "Mantenimiento")
+    @MemberOrder(sequence = "9")
+    private Mantenimiento mantenimiento;
 
     @Override
     public String toString() {

@@ -20,6 +20,7 @@ package domainapp.modules.simple.dom.mantenimiento;
 
 import com.google.common.collect.ComparisonChain;
 import domainapp.modules.simple.dom.equipo.Equipo;
+import domainapp.modules.simple.dom.tarea.Tarea;
 import lombok.AccessLevel;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.i18n.TranslatableString;
@@ -28,6 +29,9 @@ import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 
 import javax.jdo.annotations.*;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import static org.apache.isis.applib.annotation.CommandReification.ENABLED;
 import static org.apache.isis.applib.annotation.SemanticsOf.IDEMPOTENT;
@@ -66,7 +70,12 @@ public class Mantenimiento implements Comparable<Mantenimiento> {
     private Equipo equipo;
 
     //ACA PONER DESPUES LA LISTA DE TAREAS
-
+    @Column(allowsNull = "true")
+    @lombok.NonNull
+    @MemberOrder(sequence = "4")
+    @Persistent(mappedBy="mantenimiento", dependentElement="true", defaultFetchGroup = "true")
+    @CollectionLayout(named="Tareas")
+    private SortedSet<Tarea> listaTareas = new TreeSet<Tarea>();
 
 
 

@@ -32,6 +32,8 @@
                         <bs3:col span="12">
                             <c:fieldSet name="Nombre">
                                 <c:property id="nombre" namedEscaped="true"></c:property>
+                                <c:property id="detalle" namedEscaped="true"></c:property>
+                                <c:property id="mantenimiento" namedEscaped="true"></c:property>
                             </c:fieldSet>
                         </bs3:col>
                     </bs3:row>

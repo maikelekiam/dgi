@@ -1,1 +1,7 @@
 /module-simple/datanucleus.log
+/webapp/logs/AuditerServiceLogging.log
+/webapp/logs/PublisherServiceLogging.log
+/webapp/logs/sql-ddl.log
+/webapp/logs/sql-dml.log
+/webapp/logs/ThreadPoolSupport.log
+

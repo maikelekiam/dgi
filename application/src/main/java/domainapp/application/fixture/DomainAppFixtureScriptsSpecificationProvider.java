@@ -25,6 +25,7 @@ import org.apache.isis.applib.services.fixturespec.FixtureScriptsSpecification;
 import org.apache.isis.applib.services.fixturespec.FixtureScriptsSpecificationProvider;
 
 import domainapp.application.fixture.scenarios.DomainAppDemo;
+import domainapp.application.fixture.scenarios.PlantasRecreate;
 
 /**
  * Specifies where to find fixtures, and other settings.
@@ -37,7 +38,7 @@ public class DomainAppFixtureScriptsSpecificationProvider implements FixtureScri
         return FixtureScriptsSpecification
                 .builder(DomainAppFixtureScriptsSpecificationProvider.class)
                 .with(FixtureScripts.MultipleExecutionStrategy.EXECUTE)
-                .withRunScriptDefault(DomainAppDemo.class)
+                .withRunScriptDefault(PlantasRecreate.class)
                 .withRunScriptDropDown(FixtureScriptsSpecification.DropDownPolicy.CHOICES)
                 .withRecreate(DomainAppDemo.class)
                 .build();
