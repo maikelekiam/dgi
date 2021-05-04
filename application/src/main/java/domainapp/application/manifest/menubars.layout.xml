@@ -35,7 +35,17 @@
             </mb3:section>
         </mb3:menu>
         -->
-
+        <mb3:menu>
+            <mb3:named>Ordenes</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.OrdenMenu" id="create">
+                    <cpt:named>Crear orden</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.OrdenMenu" id="listAll">
+                    <cpt:named>Listar ordenes</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
         <mb3:menu>
             <mb3:named>Plantas</mb3:named>
             <mb3:section>
