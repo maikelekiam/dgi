@@ -32,13 +32,13 @@
                         <bs3:col span="12">
                             <c:fieldSet name="Name">
                                 <c:property id="tag" namedEscaped="true"></c:property>
-                                <c:property id="tempSuccion1" namedEscaped="true"></c:property>
-                                <c:property id="ps1" namedEscaped="true"></c:property>
-                                <c:property id="tempSuccion2" namedEscaped="true"></c:property>
-                                <c:property id="ps2" namedEscaped="true"></c:property>
-                                <c:property id="tempSuccion3" namedEscaped="true"></c:property>
-                                <c:property id="ps3" namedEscaped="true"></c:property>
-                                <c:property id="pd" namedEscaped="true"></c:property>
+                                <c:property id="tempSuccion1" namedEscaped="false"></c:property>
+                                <c:property id="ps1" namedEscaped="false"></c:property>
+                                <c:property id="tempSuccion2" namedEscaped="false"></c:property>
+                                <c:property id="ps2" namedEscaped="false"></c:property>
+                                <c:property id="tempSuccion3" namedEscaped="false"></c:property>
+                                <c:property id="ps3" namedEscaped="false"></c:property>
+                                <c:property id="pd" namedEscaped="false"></c:property>
                                 <c:property id="caudalDiario" namedEscaped="true"></c:property>
                             </c:fieldSet>
                         </bs3:col>

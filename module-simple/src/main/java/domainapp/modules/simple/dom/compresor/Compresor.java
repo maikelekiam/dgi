@@ -50,6 +50,7 @@ public class Compresor implements Comparable<Compresor> {
     @Column(allowsNull = "false", length = 40)
     @lombok.NonNull
     @Property() // editing disabled by default, see isis.properties
+    @PropertyLayout(named = "TAG")
     @Title(prepend = "Compresor: ")
     @MemberOrder(sequence = "1")
     private String tag;
@@ -57,7 +58,7 @@ public class Compresor implements Comparable<Compresor> {
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property()
-    @PropertyLayout(named = "Temp Succion 1")
+    @PropertyLayout(named = "ts1")
     @MemberOrder(sequence = "2")
     private double tempSuccion1;
 
@@ -71,7 +72,7 @@ public class Compresor implements Comparable<Compresor> {
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property()
-    @PropertyLayout(named = "Temp Succion 2")
+    @PropertyLayout(named = "ts2")
     @MemberOrder(sequence = "4")
     private double tempSuccion2;
 
@@ -85,7 +86,7 @@ public class Compresor implements Comparable<Compresor> {
     @Column(allowsNull = "false")
     @lombok.NonNull
     @Property()
-    @PropertyLayout(named = "Temp Succion 3")
+    @PropertyLayout(named = "ts3")
     @MemberOrder(sequence = "6")
     private double tempSuccion3;
 

@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-26 14:24:24+\n"
+"POT-Creation-Date: 2021-05-04 11:55:51+\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,6 +146,7 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.equipo.Equipo#compresor
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta,domainapp.modules.simple.dom.motor.Motor,domainapp.modules.simple.dom.compresor.Compresor)
+#: domainapp.modules.simple.dom.mantenimiento.ETipoMantenimiento#COMPRESOR
 msgid "Compresor"
 msgstr ""
 
@@ -186,6 +187,8 @@ msgstr ""
 
 
 #: domainapp.modules.simple.dom.impl.SimpleObjects#create()
+#: domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio#create()
+#: domainapp.modules.simple.dom.tarea.TareaRepositorio#create()
 msgid "Create"
 msgstr ""
 
@@ -218,6 +221,12 @@ msgid "Detail"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.tarea.Tarea#detalle
+#: domainapp.modules.simple.dom.tarea.TareaRepositorio#create(java.lang.String,java.lang.String,domainapp.modules.simple.dom.mantenimiento.Mantenimiento)
+msgid "Detalle"
+msgstr ""
+
+
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract
 msgid "Domain Change"
 msgstr ""
@@ -226,19 +235,27 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.equipo.Equipo#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadJdoMetadata()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.motor.Motor#downloadJdoMetadata()
 #: domainapp.modules.simple.dom.planta.Planta#downloadJdoMetadata()
+#: domainapp.modules.simple.dom.tarea.Tarea#downloadJdoMetadata()
 msgid "Download Jdo Metadata"
 msgstr ""
 
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo#downloadLayoutXml()
+#: domainapp.application.fixture.scenarios.EquipoCreate#downloadLayoutXml()
+#: domainapp.application.fixture.scenarios.PlantaCreate#downloadLayoutXml()
+#: domainapp.application.fixture.scenarios.PlantaTearDown#downloadLayoutXml()
+#: domainapp.application.fixture.scenarios.PlantasRecreate#downloadLayoutXml()
 #: domainapp.application.services.homepage.HomePageViewModel#downloadLayoutXml()
 #: domainapp.modules.simple.dom.compresor.Compresor#downloadLayoutXml()
 #: domainapp.modules.simple.dom.equipo.Equipo#downloadLayoutXml()
 #: domainapp.modules.simple.dom.impl.SimpleObject#downloadLayoutXml()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#downloadLayoutXml()
 #: domainapp.modules.simple.dom.motor.Motor#downloadLayoutXml()
 #: domainapp.modules.simple.dom.planta.Planta#downloadLayoutXml()
+#: domainapp.modules.simple.dom.tarea.Tarea#downloadLayoutXml()
 #: org.apache.isis.applib.AbstractViewModel#downloadLayoutXml()
 #: org.apache.isis.applib.ViewModel#downloadLayoutXml()
 #: org.apache.isis.applib.domain.DomainObjectList#downloadLayoutXml()
@@ -283,6 +300,16 @@ msgstr ""
 
 #: org.apache.isis.applib.domain.DomainObjectList#elementObjectType
 msgid "Element Object Type"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio#create(java.lang.String,domainapp.modules.simple.dom.mantenimiento.ETipoMantenimiento,domainapp.modules.simple.dom.equipo.Equipo)
+msgid "Equipo"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#equipo
+msgid "Equipo: "
 msgstr ""
 
 
@@ -349,8 +376,10 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#datanucleusIdLong()
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusIdLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusIdLong()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#datanucleusIdLong()
 #: domainapp.modules.simple.dom.motor.Motor#datanucleusIdLong()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusIdLong()
+#: domainapp.modules.simple.dom.tarea.Tarea#datanucleusIdLong()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusIdLong#prop()
 msgid "Id"
 msgstr ""
@@ -388,6 +417,21 @@ msgid "List All"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.equipo.Equipo#listaMantenimientos
+msgid "Lista Mantenimientos"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio#listAll()
+msgid "Listar Mantenimientos"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.tarea.TareaRepositorio#listAll()
+msgid "Listar Tareas: "
+msgstr ""
+
+
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#listAll()
 msgid "Listar equipos: "
 msgstr ""
@@ -395,6 +439,17 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#listAll()
 msgid "Listar plantas: "
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.tarea.Tarea#mantenimiento
+#: domainapp.modules.simple.dom.tarea.TareaRepositorio#create(java.lang.String,java.lang.String,domainapp.modules.simple.dom.mantenimiento.Mantenimiento)
+msgid "Mantenimiento"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio
+msgid "Mantenimientos"
 msgstr ""
 
 
@@ -424,6 +479,7 @@ msgstr ""
 
 #: domainapp.modules.simple.dom.equipo.Equipo#motor
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta,domainapp.modules.simple.dom.motor.Motor,domainapp.modules.simple.dom.compresor.Compresor)
+#: domainapp.modules.simple.dom.mantenimiento.ETipoMantenimiento#MOTOR
 msgid "Motor"
 msgstr ""
 
@@ -441,13 +497,17 @@ msgid "Name"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio#create(java.lang.String,domainapp.modules.simple.dom.mantenimiento.ETipoMantenimiento,domainapp.modules.simple.dom.equipo.Equipo)
 #: domainapp.modules.simple.dom.planta.Planta#nombre
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#create(java.lang.String,java.lang.String,java.lang.String)
 #: domainapp.modules.simple.dom.planta.PlantaRepositorio#findByName(java.lang.String)
+#: domainapp.modules.simple.dom.tarea.Tarea#nombre
+#: domainapp.modules.simple.dom.tarea.TareaRepositorio#create(java.lang.String,java.lang.String,domainapp.modules.simple.dom.mantenimiento.Mantenimiento)
 msgid "Nombre"
 msgstr ""
 
 
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#nombre
 #: domainapp.modules.simple.dom.planta.Planta#update(java.lang.String,java.lang.String,java.lang.String)
 msgid "Nombre: "
 msgstr ""
@@ -480,12 +540,18 @@ msgstr ""
 
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo#openRestApi()
+#: domainapp.application.fixture.scenarios.EquipoCreate#openRestApi()
+#: domainapp.application.fixture.scenarios.PlantaCreate#openRestApi()
+#: domainapp.application.fixture.scenarios.PlantaTearDown#openRestApi()
+#: domainapp.application.fixture.scenarios.PlantasRecreate#openRestApi()
 #: domainapp.application.services.homepage.HomePageViewModel#openRestApi()
 #: domainapp.modules.simple.dom.compresor.Compresor#openRestApi()
 #: domainapp.modules.simple.dom.equipo.Equipo#openRestApi()
 #: domainapp.modules.simple.dom.impl.SimpleObject#openRestApi()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#openRestApi()
 #: domainapp.modules.simple.dom.motor.Motor#openRestApi()
 #: domainapp.modules.simple.dom.planta.Planta#openRestApi()
+#: domainapp.modules.simple.dom.tarea.Tarea#openRestApi()
 #: org.apache.isis.applib.AbstractViewModel#openRestApi()
 #: org.apache.isis.applib.ViewModel#openRestApi()
 #: org.apache.isis.applib.domain.DomainObjectList#openRestApi()
@@ -613,12 +679,18 @@ msgstr ""
 
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo#rebuildMetamodel()
+#: domainapp.application.fixture.scenarios.EquipoCreate#rebuildMetamodel()
+#: domainapp.application.fixture.scenarios.PlantaCreate#rebuildMetamodel()
+#: domainapp.application.fixture.scenarios.PlantaTearDown#rebuildMetamodel()
+#: domainapp.application.fixture.scenarios.PlantasRecreate#rebuildMetamodel()
 #: domainapp.application.services.homepage.HomePageViewModel#rebuildMetamodel()
 #: domainapp.modules.simple.dom.compresor.Compresor#rebuildMetamodel()
 #: domainapp.modules.simple.dom.equipo.Equipo#rebuildMetamodel()
 #: domainapp.modules.simple.dom.impl.SimpleObject#rebuildMetamodel()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#rebuildMetamodel()
 #: domainapp.modules.simple.dom.motor.Motor#rebuildMetamodel()
 #: domainapp.modules.simple.dom.planta.Planta#rebuildMetamodel()
+#: domainapp.modules.simple.dom.tarea.Tarea#rebuildMetamodel()
 #: org.apache.isis.applib.AbstractViewModel#rebuildMetamodel()
 #: org.apache.isis.applib.ViewModel#rebuildMetamodel()
 #: org.apache.isis.applib.domain.DomainObjectList#rebuildMetamodel()
@@ -659,6 +731,10 @@ msgstr ""
 
 
 #: domainapp.application.fixture.scenarios.DomainAppDemo
+#: domainapp.application.fixture.scenarios.EquipoCreate
+#: domainapp.application.fixture.scenarios.PlantaCreate
+#: domainapp.application.fixture.scenarios.PlantaTearDown
+#: domainapp.application.fixture.scenarios.PlantasRecreate
 #: org.apache.isis.applib.fixturescripts.DiscoverableFixtureScript
 #: org.apache.isis.applib.fixturescripts.FixtureScript
 #: org.apache.isis.applib.fixturescripts.SimpleFixtureScript
@@ -691,10 +767,20 @@ msgstr ""
 #: domainapp.modules.simple.dom.compresor.Compresor#tag
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#findByName(java.lang.String)
-#: domainapp.modules.simple.dom.motor.Motor#tag
 #: domainapp.modules.simple.dom.motor.MotorRepositorio#create(java.lang.String,double,double)
 #: domainapp.modules.simple.dom.motor.MotorRepositorio#findByName(java.lang.String)
 msgid "TAG"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.motor.Motor#tag
+msgid "Tag"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#listaTareas
+#: domainapp.modules.simple.dom.tarea.TareaRepositorio
+msgid "Tareas"
 msgstr ""
 
 
@@ -720,19 +806,16 @@ msgid "Temp Agua"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion1
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
 msgid "Temp Succion 1"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion2
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
 msgid "Temp Succion 2"
 msgstr ""
 
 
-#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion3
 #: domainapp.modules.simple.dom.compresor.CompresorRepositorio#create(java.lang.String,double,double,double,double,double,double,double,double)
 msgid "Temp Succion 3"
 msgstr ""
@@ -740,6 +823,16 @@ msgstr ""
 
 #: org.apache.isis.objectstore.jdo.applib.service.DomainChangeJdoAbstract#timestamp
 msgid "Timestamp"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio#create(java.lang.String,domainapp.modules.simple.dom.mantenimiento.ETipoMantenimiento,domainapp.modules.simple.dom.equipo.Equipo)
+msgid "Tipo"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#ETipoMantenimiento
+msgid "Tipo: "
 msgstr ""
 
 
@@ -785,10 +878,14 @@ msgstr ""
 #: domainapp.modules.simple.dom.equipo.Equipo#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.impl.SimpleObject#datanucleusVersionTimestamp()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#datanucleusVersionLong()
+#: domainapp.modules.simple.dom.mantenimiento.Mantenimiento#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.motor.Motor#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.motor.Motor#datanucleusVersionTimestamp()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionLong()
 #: domainapp.modules.simple.dom.planta.Planta#datanucleusVersionTimestamp()
+#: domainapp.modules.simple.dom.tarea.Tarea#datanucleusVersionLong()
+#: domainapp.modules.simple.dom.tarea.Tarea#datanucleusVersionTimestamp()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionLong#prop()
 #: org.apache.isis.core.metamodel.services.jdosupport.Persistable_datanucleusVersionTimestamp#prop()
 msgid "Version"
@@ -836,6 +933,21 @@ msgstr ""
 #: domainapp.modules.simple.dom.equipo.Equipo#update(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta)
 #: domainapp.modules.simple.dom.equipo.EquipoRepositorio#create(java.lang.String,java.lang.String,double,double,org.joda.time.LocalDate,double,int,double,domainapp.modules.simple.dom.planta.Planta,domainapp.modules.simple.dom.motor.Motor,domainapp.modules.simple.dom.compresor.Compresor)
 msgid "rpm"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion1
+msgid "ts1"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion2
+msgid "ts2"
+msgstr ""
+
+
+#: domainapp.modules.simple.dom.compresor.Compresor#tempSuccion3
+msgid "ts3"
 msgstr ""
 
 

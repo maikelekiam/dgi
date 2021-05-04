@@ -1,52 +1,93 @@
-2021-04-26 14:45:17.696 a4eaee9e-1719-4212-94f7-712ecccccbd3,0: simple.Planta:1 by sven, nombre: [NEW] -> Planta 1
-2021-04-26 14:45:17.698 a4eaee9e-1719-4212-94f7-712ecccccbd3,0: simple.Planta:1 by sven, provincia: [NEW] -> Neuquen
-2021-04-26 14:45:17.698 a4eaee9e-1719-4212-94f7-712ecccccbd3,0: simple.Planta:1 by sven, cliente: [NEW] -> YPF
-2021-04-26 14:45:37.837 b245bc5e-71cc-404e-a1ad-40122c164aba,0: simple.Planta:2 by sven, nombre: [NEW] -> Planta 2
-2021-04-26 14:45:37.837 b245bc5e-71cc-404e-a1ad-40122c164aba,0: simple.Planta:2 by sven, provincia: [NEW] -> Rio Negro
-2021-04-26 14:45:37.837 b245bc5e-71cc-404e-a1ad-40122c164aba,0: simple.Planta:2 by sven, cliente: [NEW] -> SHELL
-2021-04-26 14:46:35.759 aa06cb18-3058-4363-9010-5d60bf68a5c3,0: simple.Motor:1 by sven, tag: [NEW] -> Motor 1
-2021-04-26 14:46:35.759 aa06cb18-3058-4363-9010-5d60bf68a5c3,0: simple.Motor:1 by sven, tempAceite: [NEW] -> 25.0
-2021-04-26 14:46:35.760 aa06cb18-3058-4363-9010-5d60bf68a5c3,0: simple.Motor:1 by sven, tempAgua: [NEW] -> 35.0
-2021-04-26 14:46:45.524 d486d7a2-cafa-4e5b-8478-1e6e965c45c1,0: simple.Motor:2 by sven, tag: [NEW] -> Motor 2
-2021-04-26 14:46:45.524 d486d7a2-cafa-4e5b-8478-1e6e965c45c1,0: simple.Motor:2 by sven, tempAceite: [NEW] -> 76.0
-2021-04-26 14:46:45.524 d486d7a2-cafa-4e5b-8478-1e6e965c45c1,0: simple.Motor:2 by sven, tempAgua: [NEW] -> 56.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, tag: [NEW] -> Copresor 1
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, tempSuccion1: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, ps1: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, tempSuccion2: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, ps2: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, tempSuccion3: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, ps3: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, pd: [NEW] -> 1.0
-2021-04-26 14:56:00.711 cefa22dc-c6ea-4c2c-9eb2-96ee9dbb92de,0: simple.Compresor:1 by sven, caudalDiario: [NEW] -> 1.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, tag: [NEW] -> Compresor 2
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, tempSuccion1: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, ps1: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, tempSuccion2: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, ps2: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, tempSuccion3: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, ps3: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, pd: [NEW] -> 2.0
-2021-04-26 14:56:15.579 5f6a6c08-1dfb-435a-9a85-b8f5137785c5,0: simple.Compresor:2 by sven, caudalDiario: [NEW] -> 2.0
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, denominacion: [NEW] -> Equipo 1
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, modelo: [NEW] -> 1
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, horometro: [NEW] -> 1.0
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, horasProximoMantenimiento: [NEW] -> 1.0
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-04-01
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, porcentajeDisponibilidadMensual: [NEW] -> 1.0
-2021-04-26 14:56:41.102 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, rpm: [NEW] -> 1
-2021-04-26 14:56:41.103 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, presionAceite: [NEW] -> 1.0
-2021-04-26 14:56:41.103 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, planta: [NEW] -> Planta 1
-2021-04-26 14:56:41.103 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, motor: [NEW] -> Motor 1
-2021-04-26 14:56:41.103 c488ff24-f15c-4528-8cac-50ca64cc078c,0: simple.Equipo:1 by sven, compresor: [NEW] -> Copresor 1
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, denominacion: [NEW] -> Equipo 2
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, modelo: [NEW] -> 2
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, horometro: [NEW] -> 2.0
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, horasProximoMantenimiento: [NEW] -> 2.0
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-04-02
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, porcentajeDisponibilidadMensual: [NEW] -> 2.0
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, rpm: [NEW] -> 2
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, presionAceite: [NEW] -> 2.0
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, planta: [NEW] -> Planta 1
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, motor: [NEW] -> Motor 2
-2021-04-26 14:57:10.860 0644d1cd-3fa0-4bc2-bbfd-e1282c8d96cb,0: simple.Equipo:2 by sven, compresor: [NEW] -> Compresor 2
+2021-05-04 12:43:20.281 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, tag: [NEW] -> COM423
+2021-05-04 12:43:20.282 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, tempSuccion1: [NEW] -> 1.0
+2021-05-04 12:43:20.282 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, ps1: [NEW] -> 1.0
+2021-05-04 12:43:20.282 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, tempSuccion2: [NEW] -> 1.0
+2021-05-04 12:43:20.282 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, ps2: [NEW] -> 1.0
+2021-05-04 12:43:20.283 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, tempSuccion3: [NEW] -> 1.0
+2021-05-04 12:43:20.283 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, ps3: [NEW] -> 1.0
+2021-05-04 12:43:20.283 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, pd: [NEW] -> 1.0
+2021-05-04 12:43:20.283 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:1 by sven, caudalDiario: [NEW] -> 1.0
+2021-05-04 12:43:20.283 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, tag: [NEW] -> COM980
+2021-05-04 12:43:20.285 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, tempSuccion1: [NEW] -> 2.0
+2021-05-04 12:43:20.285 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, ps1: [NEW] -> 2.0
+2021-05-04 12:43:20.285 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, tempSuccion2: [NEW] -> 2.0
+2021-05-04 12:43:20.287 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, ps2: [NEW] -> 2.0
+2021-05-04 12:43:20.287 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, tempSuccion3: [NEW] -> 2.0
+2021-05-04 12:43:20.287 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, ps3: [NEW] -> 2.0
+2021-05-04 12:43:20.287 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, pd: [NEW] -> 2.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:2 by sven, caudalDiario: [NEW] -> 2.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, tag: [NEW] -> COM155
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, tempSuccion1: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, ps1: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, tempSuccion2: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, ps2: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, tempSuccion3: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, ps3: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, pd: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Compresor:3 by sven, caudalDiario: [NEW] -> 3.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:1 by sven, tag: [NEW] -> MOT117
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:1 by sven, tempAceite: [NEW] -> 15.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:1 by sven, tempAgua: [NEW] -> 17.0
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:2 by sven, tag: [NEW] -> MOT212
+2021-05-04 12:43:20.288 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:2 by sven, tempAceite: [NEW] -> 21.0
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:2 by sven, tempAgua: [NEW] -> 29.0
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:3 by sven, tag: [NEW] -> MOT336
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:3 by sven, tempAceite: [NEW] -> 30.0
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Motor:3 by sven, tempAgua: [NEW] -> 33.0
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:1 by sven, nombre: [NEW] -> Norte
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:1 by sven, provincia: [NEW] -> Neuquen
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:1 by sven, cliente: [NEW] -> ESSO
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:2 by sven, nombre: [NEW] -> Sur
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:2 by sven, provincia: [NEW] -> Rio Negro
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:2 by sven, cliente: [NEW] -> YPF
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:3 by sven, nombre: [NEW] -> Este
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:3 by sven, provincia: [NEW] -> Chubut
+2021-05-04 12:43:20.289 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Planta:3 by sven, cliente: [NEW] -> SHELL
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, denominacion: [NEW] -> EQUIPO1
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, modelo: [NEW] -> mod01
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, horometro: [NEW] -> 2500.0
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, horasProximoMantenimiento: [NEW] -> 1000.0
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-07-15
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, porcentajeDisponibilidadMensual: [NEW] -> 15.0
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, rpm: [NEW] -> 3600
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, presionAceite: [NEW] -> 1750.0
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, planta: [NEW] -> Norte
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, motor: [NEW] -> MOT117
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:1 by sven, compresor: [NEW] -> COM423
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, denominacion: [NEW] -> EQUIPO2
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, modelo: [NEW] -> mod02
+2021-05-04 12:43:20.290 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, horometro: [NEW] -> 1750.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, horasProximoMantenimiento: [NEW] -> 1000.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-03-11
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, porcentajeDisponibilidadMensual: [NEW] -> 15.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, rpm: [NEW] -> 3600
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, presionAceite: [NEW] -> 1750.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, planta: [NEW] -> Norte
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, motor: [NEW] -> MOT212
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:2 by sven, compresor: [NEW] -> COM980
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, denominacion: [NEW] -> EQUIPO3
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, modelo: [NEW] -> mod03
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, horometro: [NEW] -> 3800.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, horasProximoMantenimiento: [NEW] -> 1000.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, fechaUltimoMantenimiento: [NEW] -> 2021-09-06
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, porcentajeDisponibilidadMensual: [NEW] -> 15.0
+2021-05-04 12:43:20.291 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, rpm: [NEW] -> 3600
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, presionAceite: [NEW] -> 1750.0
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, planta: [NEW] -> Norte
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, motor: [NEW] -> MOT336
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Equipo:3 by sven, compresor: [NEW] -> COM155
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Mantenimiento:1 by sven, nombre: [NEW] -> Manten01
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Mantenimiento:1 by sven, ETipoMantenimiento: [NEW] -> COMPRESOR
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Mantenimiento:1 by sven, equipo: [NEW] -> EQUIPO1
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:1 by sven, nombre: [NEW] -> Tarea 01
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:1 by sven, detalle: [NEW] -> Controlar Aceite
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:1 by sven, mantenimiento: [NEW] -> Manten01
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:2 by sven, nombre: [NEW] -> Tarea 02
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:2 by sven, detalle: [NEW] -> Controlar Humos de Escape
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:2 by sven, mantenimiento: [NEW] -> Manten01
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:3 by sven, nombre: [NEW] -> Tarea 03
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:3 by sven, detalle: [NEW] -> Limpiar Salida
+2021-05-04 12:43:20.292 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:3 by sven, mantenimiento: [NEW] -> Manten01
+2021-05-04 12:43:20.293 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:4 by sven, nombre: [NEW] -> Tarea 04
+2021-05-04 12:43:20.293 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:4 by sven, detalle: [NEW] -> Desarmar
+2021-05-04 12:43:20.293 7a6e20d9-1417-4744-a9de-427521bbae74,0: simple.Tarea:4 by sven, mantenimiento: [NEW] -> Manten01

@@ -34,6 +34,11 @@ import domainapp.modules.simple.dom.motor.Motor;
 import domainapp.modules.simple.dom.motor.MotorRepositorio;
 import domainapp.modules.simple.dom.equipo.Equipo;
 import domainapp.modules.simple.dom.equipo.EquipoRepositorio;
+import domainapp.modules.simple.dom.mantenimiento.MantenimientoRepositorio;
+import domainapp.modules.simple.dom.mantenimiento.Mantenimiento;
+import domainapp.modules.simple.dom.mantenimiento.ETipoMantenimiento;
+import domainapp.modules.simple.dom.tarea.TareaRepositorio;
+import domainapp.modules.simple.dom.tarea.Tarea;
 
 public class EquipoCreate extends FixtureScript {
 
@@ -44,22 +49,29 @@ public class EquipoCreate extends FixtureScript {
     @Override
     protected void execute(final ExecutionContext ec) {
 
-        Compresor compresor01 = compresorRepositorio.create("c1",1,1,1,1,1,1,1,1);
-        Compresor compresor02 = compresorRepositorio.create("c2",2,2,2,2,2,2,2,2);
-        Compresor compresor03 = compresorRepositorio.create("c3",3,3,3,3,3,3,3,3);
+        Compresor compresor01 = compresorRepositorio.create("COM423",1,1,1,1,1,1,1,1);
+        Compresor compresor02 = compresorRepositorio.create("COM980",2,2,2,2,2,2,2,2);
+        Compresor compresor03 = compresorRepositorio.create("COM155",3,3,3,3,3,3,3,3);
 
-        Motor motor01 = motorRepositorio.create("m1",1,1);
-        Motor motor02 = motorRepositorio.create("m2",2,2);
-        Motor motor03 = motorRepositorio.create("m3",3,3);
+        Motor motor01 = motorRepositorio.create("MOT117",15,17);
+        Motor motor02 = motorRepositorio.create("MOT212",21,29);
+        Motor motor03 = motorRepositorio.create("MOT336",30,33);
 
         Planta planta01 = plantaRepositorio.create("Norte", "Neuquen", "ESSO");
         Planta planta02 = plantaRepositorio.create("Sur", "Rio Negro", "YPF");
         Planta planta03 = plantaRepositorio.create("Este", "Chubut", "SHELL");
 
-        Equipo equipo01 = equipoRepositorio.create("EQ1","mod01",2500,1000, new LocalDate(2021, 7, 15),15,3600,1750,planta01,motor01,compresor01);
+        Equipo equipo01 = equipoRepositorio.create("EQUIPO1","mod01",2500,1000, new LocalDate(2021, 7, 15),15,3600,1750,planta01,motor01,compresor01);
+        Equipo equipo02 = equipoRepositorio.create("EQUIPO2","mod02",1750,1000, new LocalDate(2021, 3, 11),15,3600,1750,planta01,motor02,compresor02);
+        Equipo equipo03 = equipoRepositorio.create("EQUIPO3","mod03",3800,1000, new LocalDate(2021, 9, 6),15,3600,1750,planta01,motor03,compresor03);
+
+        Mantenimiento mantenimiento01 = mantenimientoRepositorio.create("Manten01", ETipoMantenimiento.COMPRESOR,equipo01);
 
 
-
+        Tarea tarea01 = tareaRepositorio.create("Tarea 01","Controlar Aceite", mantenimiento01);
+        Tarea tarea02 = tareaRepositorio.create("Tarea 02","Controlar Humos de Escape", mantenimiento01);
+        Tarea tarea03 = tareaRepositorio.create("Tarea 03","Limpiar Salida", mantenimiento01);
+        Tarea tarea04 = tareaRepositorio.create("Tarea 04","Desarmar", mantenimiento01);
 
     }
 
@@ -74,6 +86,12 @@ public class EquipoCreate extends FixtureScript {
 
     @javax.inject.Inject
     private EquipoRepositorio equipoRepositorio;
+
+    @javax.inject.Inject
+    private MantenimientoRepositorio mantenimientoRepositorio;
+
+    @javax.inject.Inject
+    private TareaRepositorio tareaRepositorio;
 
     @Inject
     MetaModelService4 metaModelService4;
